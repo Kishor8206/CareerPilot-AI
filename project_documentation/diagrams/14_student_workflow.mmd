@@ -1,0 +1,18 @@
+flowchart TD
+  n0["Resume analysed"]
+  n1["Assessment submitted"]
+  n2["DSA solution judged"]
+  n3["Interview answer evaluated"]
+  n4["Alumni feedback received"]
+  n5["recomputeReadiness(): collect evidence, recency-weight it"]
+  n6["POST /ai/readiness/predict: APIE + Random Forest second opinion"]
+  n7["New append-only snapshot, skill gaps, recommendations"]
+  n8["readiness:updated pushed over Socket.IO"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6
+  n6 --> n7
+  n7 --> n8

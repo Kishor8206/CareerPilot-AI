@@ -1,0 +1,137 @@
+# ============================================================
+# CareerPilot AI - full stack
+#
+#   cp .env.example .env      # then set the secrets marked below
+#   docker compose up --build
+#
+#   Frontend      http://localhost:8080
+#   API           http://localhost:5000/api/v1
+#   AI service    http://localhost:8000  (internal; docs at /docs in development)
+#   MongoDB       localhost:27017
+# ============================================================
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: careerpilot-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER:-careerpilot}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:-careerpilot_dev_password}
+      MONGO_INITDB_DATABASE: careerpilot
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ['CMD', 'mongosh', '--quiet', '--eval', "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    networks: [careerpilot]
+
+  ai-service:
+    build:
+      context: .
+      dockerfile: docker/ai-service.Dockerfile
+    container_name: careerpilot-ai
+    restart: unless-stopped
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      # Must match the backend's AI_SERVICE_INTERNAL_KEY.
+      AI_SERVICE_INTERNAL_KEY: ${AI_SERVICE_INTERNAL_KEY:?set AI_SERVICE_INTERNAL_KEY in .env}
+      AI_SERVICE_ALLOWED_ORIGINS: http://backend:5000
+      # `mock` runs entirely offline and labels every response as mock output.
+      AI_PROVIDER: ${AI_PROVIDER:-mock}
+      AI_API_KEY: ${AI_API_KEY:-}
+      AI_BASE_URL: ${AI_BASE_URL:-}
+      AI_MODEL: ${AI_MODEL:-gpt-4o-mini}
+      EMBEDDING_PROVIDER: ${EMBEDDING_PROVIDER:-hash}
+      VECTOR_DB_PROVIDER: ${VECTOR_DB_PROVIDER:-numpy}
+      DEMO_MODE: ${DEMO_MODE:-false}
+    volumes:
+      # Persist the vector index and trained model across restarts.
+      - ai_vectorstore:/app/data/vectorstore
+      - ai_artifacts:/app/artifacts
+    # Not published to the host by default: this service is internal-only.
+    expose:
+      - '8000'
+    networks: [careerpilot]
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    container_name: careerpilot-backend
+    restart: unless-stopped
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      ai-service:
+        condition: service_started
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      PORT: 5000
+      API_PREFIX: /api/v1
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:8080}
+      MONGODB_URI: mongodb://${MONGO_ROOT_USER:-careerpilot}:${MONGO_ROOT_PASSWORD:-careerpilot_dev_password}@mongodb:27017/careerpilot?authSource=admin
+
+      # Secrets. Generate each with:
+      #   node -e "console.log(require('crypto').randomBytes(48).toString('hex'))"
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:?set JWT_REFRESH_SECRET in .env}
+      COOKIE_SECRET: ${COOKIE_SECRET:?set COOKIE_SECRET in .env}
+
+      AI_SERVICE_URL: http://ai-service:8000
+      AI_SERVICE_INTERNAL_KEY: ${AI_SERVICE_INTERNAL_KEY:?set AI_SERVICE_INTERNAL_KEY in .env}
+      AI_PROVIDER: ${AI_PROVIDER:-mock}
+
+      STORAGE_PROVIDER: ${STORAGE_PROVIDER:-local}
+      STORAGE_LOCAL_PATH: /app/backend/storage
+      MAX_UPLOAD_SIZE_MB: ${MAX_UPLOAD_SIZE_MB:-5}
+
+      # The DSA judge starts sibling containers through the Docker CLI. Inside
+      # this container there is no Docker daemon, and mounting the host's
+      # docker.sock would hand the API container root on the host, so the judge
+      # is off here. Run the backend on the host (npm run dev) to use it.
+      CODE_EXECUTION_PROVIDER: disabled
+
+      MAIL_PROVIDER: ${MAIL_PROVIDER:-console}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      LOG_PRETTY: 'false'
+      DEMO_MODE: ${DEMO_MODE:-false}
+    ports:
+      - '5000:5000'
+    volumes:
+      - backend_storage:/app/backend/storage
+    networks: [careerpilot]
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+      args:
+        # Same-origin: nginx proxies /api and /socket.io to the backend, which
+        # keeps the refresh-token cookie first-party.
+        VITE_API_URL: /api/v1
+        VITE_SOCKET_URL: ''
+        VITE_DEMO_MODE: ${DEMO_MODE:-false}
+    container_name: careerpilot-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - '8080:80'
+    networks: [careerpilot]
+
+volumes:
+  mongodb_data:
+  backend_storage:
+  ai_vectorstore:
+  ai_artifacts:
+
+networks:
+  careerpilot:
+    driver: bridge

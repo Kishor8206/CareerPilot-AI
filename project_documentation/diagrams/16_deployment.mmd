@@ -1,0 +1,25 @@
+flowchart TD
+  subgraph L0["CLIENT"]
+    b0_0["Browser"]
+  end
+  subgraph L1["frontend"]
+    b1_0["nginx serving the Vite build proxies /api and /socket.io"]
+  end
+  subgraph L2["backend"]
+    b2_0["Node.js + Express (judge DISABLED in compose: no Docker socket is mounted)"]
+  end
+  subgraph L3["ai-service"]
+    b3_0["FastAPI + uvicorn reachable only from the backend"]
+  end
+  subgraph L4["mongodb"]
+    b4_0["mongo:7 with a named volume"]
+  end
+  subgraph L5["HOST-ONLY (outside compose)"]
+    b5_0["DSA judge: backend on the host starts careerpilot-judge:1 containers"]
+    b5_1["GPU host with vLLM for adapters (PLANNED)"]
+  end
+  L0 --> L1
+  L1 --> L2
+  L2 --> L3
+  L3 --> L4
+  L4 --> L5

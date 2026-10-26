@@ -1,0 +1,120 @@
+{
+  "evaluated": "2026-10-07 11:37:40",
+  "systems": {
+    "finetuned": {
+      "all": {
+        "n": 60,
+        "1_json_validity": 0.5167,
+        "2_schema_compliance": 0.0667,
+        "3_skill_gap_f1": 0.4,
+        "4_priority_agreement": 1.0,
+        "5_prerequisite_correctness": 0.75,
+        "6_roadmap_ordering": 0.0,
+        "7_role_alignment": 1.0,
+        "8_personalisation": 0.5,
+        "9_study_plan_feasibility": 0.0,
+        "10_resource_id_validity": 1.0,
+        "11_resource_hallucination": 0.0,
+        "12_contradiction_rate": 0.5,
+        "13_duplicate_rate": 0.0,
+        "fully_valid_without_repair": 0.0,
+        "error_codes": {
+          "empty": 2,
+          "recommends_met_skill": 2,
+          "section_not_requested": 1,
+          "skill_not_in_gaps": 1,
+          "too_many_weeks": 1,
+          "phase_coverage": 1,
+          "prerequisite_order": 1,
+          "week_overload": 1
+        }
+      },
+      "in_distribution": {
+        "n": 30,
+        "1_json_validity": 0.5333,
+        "2_schema_compliance": 0.0667,
+        "3_skill_gap_f1": 0.0,
+        "4_priority_agreement": null,
+        "5_prerequisite_correctness": 1.0,
+        "6_roadmap_ordering": 0.0,
+        "7_role_alignment": 1.0,
+        "8_personalisation": 0.5,
+        "9_study_plan_feasibility": 0.0,
+        "10_resource_id_validity": null,
+        "11_resource_hallucination": null,
+        "12_contradiction_rate": 0.5,
+        "13_duplicate_rate": 0.0,
+        "fully_valid_without_repair": 0.0,
+        "error_codes": {
+          "empty": 1,
+          "recommends_met_skill": 1,
+          "section_not_requested": 1,
+          "skill_not_in_gaps": 1,
+          "too_many_weeks": 1
+        }
+      },
+      "held_out_roles": {
+        "n": 30,
+        "1_json_validity": 0.5,
+        "2_schema_compliance": 0.0667,
+        "3_skill_gap_f1": 0.5882,
+        "4_priority_agreement": 1.0,
+        "5_prerequisite_correctness": 0.5,
+        "6_roadmap_ordering": 0.0,
+        "7_role_alignment": 1.0,
+        "8_personalisation": 0.5,
+        "9_study_plan_feasibility": 0.0,
+        "10_resource_id_validity": 1.0,
+        "11_resource_hallucination": 0.0,
+        "12_contradiction_rate": 0.5,
+        "13_duplicate_rate": 0.0,
+        "fully_valid_without_repair": 0.0,
+        "error_codes": {
+          "empty": 1,
+          "phase_coverage": 1,
+          "prerequisite_order": 1,
+          "recommends_met_skill": 1,
+          "week_overload": 1
+        }
+      }
+    },
+    "base": {
+      "all": {
+        "n": 8,
+        "1_json_validity": 0.875,
+        "2_schema_compliance": 0.0,
+        "3_skill_gap_f1": null,
+        "4_priority_agreement": null,
+        "5_prerequisite_correctness": null,
+        "6_roadmap_ordering": null,
+        "7_role_alignment": null,
+        "8_personalisation": null,
+        "9_study_plan_feasibility": null,
+        "10_resource_id_validity": null,
+        "11_resource_hallucination": null,
+        "12_contradiction_rate": null,
+        "13_duplicate_rate": null,
+        "fully_valid_without_repair": 0.0,
+        "error_codes": {}
+      },
+      "in_distribution": {
+        "n": 8,
+        "1_json_validity": 0.875,
+        "2_schema_compliance": 0.0,
+        "3_skill_gap_f1": null,
+        "4_priority_agreement": null,
+        "5_prerequisite_correctness": null,
+        "6_roadmap_ordering": null,
+        "7_role_alignment": null,
+        "8_personalisation": null,
+        "9_study_plan_feasibility": null,
+        "10_resource_id_validity": null,
+        "11_resource_hallucination": null,
+        "12_contradiction_rate": null,
+        "13_duplicate_rate": null,
+        "fully_valid_without_repair": 0.0,
+        "error_codes": {}
+      }
+    }
+  }
+}

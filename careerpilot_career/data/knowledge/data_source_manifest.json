@@ -1,0 +1,177 @@
+{
+  "manifest_version": 1,
+  "generated": "2026-10-07 10:05:11",
+  "sources": [
+    {
+      "source": "O*NET Database",
+      "version": "31.0",
+      "url": "https://www.onetcenter.org/dl_files/database/db_31_0_text.zip",
+      "license": "CC BY 4.0",
+      "attribution": "This work includes information from the O*NET 31.0 Database by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA). Used under the CC BY 4.0 license. CareerPilot has modified all or some of this information. USDOL/ETA has not approved, endorsed, or tested these modifications.",
+      "real_or_synthetic": "real (official occupational database)",
+      "sha256": "6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9",
+      "bytes": 13183034,
+      "files_in_archive": 46,
+      "row_count": {
+        "Occupation Data.txt": 1016,
+        "Job Titles.txt": 54269,
+        "Software Skills.txt": 31821,
+        "Related Occupations.txt": 18460
+      },
+      "fields": [
+        "O*NET-SOC Code",
+        "Title",
+        "Job Title",
+        "Workplace Example",
+        "Hot Technology",
+        "In Demand"
+      ],
+      "purpose": "Corroborate which technologies belong to each role; map role aliases to occupations.",
+      "preprocessing": "Filtered to the SOC codes mapped to curated roles; technology names matched to canonical skills.",
+      "limitations": "Occupations are coarse (no Frontend/DevOps/MERN occupation). Software lists are long and unranked. Contains NO prerequisites, learning effort, projects or interview topics."
+    },
+    {
+      "source": "ESCO (European Skills, Competences, Qualifications and Occupations)",
+      "version": "v1.2.1",
+      "url": "https://ec.europa.eu/esco/api",
+      "license": "NOT VERIFIED in this pipeline: the ESCO download page states only that the data is free of charge. Confirm reuse terms before redistributing ESCO text.",
+      "real_or_synthetic": "real (official EU classification)",
+      "occupations_fetched": 13,
+      "failed": {},
+      "detail": {
+        "DevOps engineer": {
+          "matched_title": "instrumentation engineer",
+          "essential": 19,
+          "optional": 29
+        },
+        "ICT business analyst": {
+          "matched_title": "ICT business analyst",
+          "essential": 17,
+          "optional": 19
+        },
+        "ICT security administrator": {
+          "matched_title": "ICT security administrator",
+          "essential": 19,
+          "optional": 20
+        },
+        "ICT system administrator": {
+          "matched_title": "ICT system administrator",
+          "essential": 23,
+          "optional": 16
+        },
+        "cloud engineer": {
+          "matched_title": "instrumentation engineer",
+          "essential": 19,
+          "optional": 29
+        },
+        "data analyst": {
+          "matched_title": "data analyst",
+          "essential": 28,
+          "optional": 17
+        },
+        "data engineer": {
+          "matched_title": "data scientist",
+          "essential": 23,
+          "optional": 16
+        },
+        "data scientist": {
+          "matched_title": "data scientist",
+          "essential": 23,
+          "optional": 16
+        },
+        "mobile application developer": {
+          "matched_title": "mobile application developer",
+          "essential": 17,
+          "optional": 65
+        },
+        "software developer": {
+          "matched_title": "software developer",
+          "essential": 23,
+          "optional": 63
+        },
+        "software tester": {
+          "matched_title": "software tester",
+          "essential": 10,
+          "optional": 68
+        },
+        "user interface developer": {
+          "matched_title": "user interface developer",
+          "essential": 16,
+          "optional": 73
+        },
+        "web developer": {
+          "matched_title": "web developer",
+          "essential": 20,
+          "optional": 66
+        }
+      },
+      "fields": [
+        "occupation title",
+        "ISCO code",
+        "hasEssentialSkill",
+        "hasOptionalSkill"
+      ],
+      "purpose": "Corroborate role-to-skill mappings. Not used as training text.",
+      "preprocessing": "One occupation fetched per curated role; skill titles matched to canonical skills.",
+      "limitations": "Essential skills are broad competences ('use markup languages'); no prerequisites or learning order."
+    },
+    {
+      "source": "CareerPilot skill taxonomy",
+      "version": "ai-service/app/nlp/skills_taxonomy.py",
+      "url": "in-repo",
+      "license": "project-owned",
+      "real_or_synthetic": "curated",
+      "row_count": {
+        "skills": 107
+      },
+      "fields": [
+        "name",
+        "category",
+        "aliases"
+      ],
+      "purpose": "Shared vocabulary with the ATS output; source of aliases.",
+      "preprocessing": "Read-only. Not modified by this pipeline.",
+      "limitations": "Technology-focused."
+    },
+    {
+      "source": "Job-fit corpora (med2425/resume-job-fit-merged-v1, 0xnbk/resume-ats-score-v1-en)",
+      "version": "as downloaded by careerpilot_ats",
+      "url": "huggingface.co/datasets",
+      "available_locally": true,
+      "license": "med2425: not declared; 0xnbk: Apache-2.0",
+      "real_or_synthetic": "real job-description text, synthetic fit labels",
+      "row_count": {
+        "distinct_skill_sets": 844
+      },
+      "fields": [
+        "job description text",
+        "resume text"
+      ],
+      "purpose": "Empirical job demand per skill (share of job descriptions asking for it), via the trained skill recommender.",
+      "preprocessing": "Read-only reuse of ai-service/artifacts/skill_recommender.json. No text is copied into training data.",
+      "limitations": "Mostly US general-IT postings; small."
+    },
+    {
+      "source": "Curated career knowledge",
+      "version": "career-knowledge-v1",
+      "url": "careerpilot_career/training/curated_knowledge.py",
+      "license": "project-owned",
+      "real_or_synthetic": "hand-authored editorial judgement",
+      "row_count": {
+        "skills": 124,
+        "roles": 20
+      },
+      "fields": [
+        "prerequisites",
+        "difficulty",
+        "hours",
+        "role skill levels",
+        "projects",
+        "interview topics"
+      ],
+      "purpose": "The prerequisite graph, role targets, projects and interview topics no external source provides.",
+      "preprocessing": "Validated by build_skill_graph.py (acyclic, no dangling references).",
+      "limitations": "Not an official standard and not empirically validated. Hours are planning estimates."
+    }
+  ]
+}

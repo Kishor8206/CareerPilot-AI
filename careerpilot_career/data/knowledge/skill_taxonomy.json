@@ -1,0 +1,2354 @@
+{
+  "knowledge_version": "career-knowledge-v1",
+  "skills": [
+    {
+      "canonical_skill": "Programming Fundamentals",
+      "aliases": [
+        "programming basics",
+        "coding fundamentals",
+        "programming logic"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "programming",
+      "related_skills": [
+        "Object Oriented Programming",
+        "Data Structures",
+        "Operating Systems",
+        "Software Testing",
+        "Python",
+        "Java"
+      ],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.325,
+      "hours": 40,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Object Oriented Programming",
+      "aliases": [
+        "oops",
+        "oop",
+        "object-oriented"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "programming",
+      "related_skills": [
+        "Spring Boot",
+        "Programming Fundamentals"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.342,
+      "hours": 30,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Data Structures",
+      "aliases": [
+        "dsa",
+        "data structure",
+        "ds & algo",
+        "dsa concepts"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "dsa",
+      "related_skills": [
+        "Algorithms",
+        "DSA Problem Solving"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 3,
+      "importance": 0.59,
+      "hours": 70,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Algorithms",
+      "aliases": [
+        "algorithm design",
+        "algo"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "dsa",
+      "related_skills": [
+        "DSA Problem Solving",
+        "Data Structures"
+      ],
+      "prerequisites": [
+        "Data Structures"
+      ],
+      "difficulty": 3,
+      "importance": 0.231,
+      "hours": 80,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "DSA Problem Solving",
+      "aliases": [
+        "competitive programming",
+        "leetcode practice",
+        "coding interview practice"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "dsa",
+      "related_skills": [
+        "Data Structures",
+        "Algorithms"
+      ],
+      "prerequisites": [
+        "Algorithms"
+      ],
+      "difficulty": 4,
+      "importance": 0.068,
+      "hours": 100,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Operating Systems",
+      "aliases": [
+        "os concepts",
+        "operating system"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "cs-core",
+      "related_skills": [
+        "Computer Networks",
+        "DBMS"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 3,
+      "importance": 0.103,
+      "hours": 40,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Computer Networks",
+      "aliases": [
+        "networking",
+        "cn",
+        "tcp/ip"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "cs-core",
+      "related_skills": [
+        "System Design",
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "Cybersecurity",
+        "Network Security"
+      ],
+      "prerequisites": [],
+      "difficulty": 3,
+      "importance": 0.342,
+      "hours": 40,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "DBMS",
+      "aliases": [
+        "database management system",
+        "rdbms"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "cs-core",
+      "related_skills": [
+        "System Design",
+        "Operating Systems",
+        "Computer Networks"
+      ],
+      "prerequisites": [
+        "SQL"
+      ],
+      "difficulty": 2,
+      "importance": 0.145,
+      "hours": 35,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "System Design",
+      "aliases": [
+        "hld",
+        "lld",
+        "low level design",
+        "high level design",
+        "scalability"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "architecture",
+      "related_skills": [],
+      "prerequisites": [
+        "DBMS",
+        "Computer Networks",
+        "REST API"
+      ],
+      "difficulty": 4,
+      "importance": 0.111,
+      "hours": 80,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "HTTP & Web Fundamentals",
+      "aliases": [
+        "http",
+        "how the web works"
+      ],
+      "category": "FOUNDATION",
+      "subcategory": "web",
+      "related_skills": [
+        "REST API",
+        "Web Application Security"
+      ],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.0,
+      "hours": 10,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Git",
+      "aliases": [
+        "github",
+        "gitlab",
+        "version control",
+        "bitbucket"
+      ],
+      "category": "TOOL",
+      "subcategory": "version-control",
+      "related_skills": [
+        "CI/CD"
+      ],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 1.0,
+      "hours": 12,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Linux",
+      "aliases": [
+        "unix",
+        "ubuntu"
+      ],
+      "category": "TOOL",
+      "subcategory": "os",
+      "related_skills": [
+        "Shell Scripting",
+        "Docker",
+        "Terraform",
+        "Ansible",
+        "Nginx",
+        "Monitoring & Observability"
+      ],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.402,
+      "hours": 30,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Shell Scripting",
+      "aliases": [
+        "bash",
+        "shell",
+        "powershell",
+        "zsh"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "scripting",
+      "related_skills": [],
+      "prerequisites": [
+        "Linux"
+      ],
+      "difficulty": 2,
+      "importance": 0.162,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Agile",
+      "aliases": [
+        "scrum",
+        "kanban",
+        "agile methodology"
+      ],
+      "category": "PRACTICE",
+      "subcategory": "process",
+      "related_skills": [],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.068,
+      "hours": 10,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Software Testing",
+      "aliases": [
+        "unit testing",
+        "qa",
+        "test automation"
+      ],
+      "category": "PRACTICE",
+      "subcategory": "quality",
+      "related_skills": [
+        "Selenium",
+        "Performance Testing"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.179,
+      "hours": 30,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Python",
+      "aliases": [
+        "python3",
+        "py"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Django",
+        "Flask",
+        "FastAPI",
+        "NumPy",
+        "Jupyter",
+        "Machine Learning"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 1,
+      "importance": 0.624,
+      "hours": 50,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Java",
+      "aliases": [
+        "core java",
+        "java8",
+        "java 8",
+        "j2ee"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Scala",
+        "Spring Boot",
+        "JUnit",
+        "Python",
+        "JavaScript",
+        "C"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.111,
+      "hours": 70,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "JavaScript",
+      "aliases": [
+        "js",
+        "ecmascript",
+        "es6",
+        "vanilla js"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "TypeScript",
+        "React",
+        "Vue.js",
+        "Jest",
+        "Node.js",
+        "Firebase"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.256,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "C",
+      "aliases": [
+        "c language",
+        "ansi c"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C++",
+        "C#",
+        "Go"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "C++",
+      "aliases": [
+        "cpp",
+        "c plus plus"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C#",
+        "Go"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 80,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "C#",
+      "aliases": [
+        "csharp",
+        "c sharp",
+        "dotnet c#"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "ASP.NET",
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 70,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Go",
+      "aliases": [
+        "golang"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++",
+        "C#"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 50,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Rust",
+      "aliases": [],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++",
+        "C#"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 4,
+      "importance": 0.0,
+      "hours": 100,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Kotlin",
+      "aliases": [],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Android Development",
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.085,
+      "hours": 50,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Swift",
+      "aliases": [],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "iOS Development",
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 50,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "PHP",
+      "aliases": [],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Laravel",
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 45,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Ruby",
+      "aliases": [],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++",
+        "C#"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 45,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "R",
+      "aliases": [
+        "r language",
+        "r programming"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "general",
+      "related_skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++",
+        "C#"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 40,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "TypeScript",
+      "aliases": [
+        "ts"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "web",
+      "related_skills": [
+        "Angular"
+      ],
+      "prerequisites": [
+        "JavaScript"
+      ],
+      "difficulty": 2,
+      "importance": 0.094,
+      "hours": 30,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Scala",
+      "aliases": [],
+      "category": "LANGUAGE",
+      "subcategory": "jvm",
+      "related_skills": [],
+      "prerequisites": [
+        "Java"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "SQL",
+      "aliases": [
+        "structured query language"
+      ],
+      "category": "LANGUAGE",
+      "subcategory": "data",
+      "related_skills": [
+        "DBMS",
+        "MySQL",
+        "PostgreSQL",
+        "Oracle",
+        "Database Design",
+        "Data Analysis"
+      ],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.872,
+      "hours": 35,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "HTML",
+      "aliases": [
+        "html5"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "markup",
+      "related_skills": [
+        "CSS",
+        "React",
+        "Angular",
+        "Vue.js"
+      ],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.205,
+      "hours": 15,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "CSS",
+      "aliases": [
+        "css3"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "styling",
+      "related_skills": [
+        "Responsive Design",
+        "Tailwind CSS",
+        "Bootstrap",
+        "React",
+        "Angular",
+        "Vue.js"
+      ],
+      "prerequisites": [
+        "HTML"
+      ],
+      "difficulty": 1,
+      "importance": 0.205,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Responsive Design",
+      "aliases": [
+        "mobile-first design"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "styling",
+      "related_skills": [
+        "CSS",
+        "Tailwind CSS",
+        "Bootstrap"
+      ],
+      "prerequisites": [
+        "CSS"
+      ],
+      "difficulty": 2,
+      "importance": 0.085,
+      "hours": 15,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Tailwind CSS",
+      "aliases": [
+        "tailwind",
+        "tailwindcss"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "styling",
+      "related_skills": [
+        "CSS",
+        "Responsive Design",
+        "Bootstrap"
+      ],
+      "prerequisites": [
+        "CSS"
+      ],
+      "difficulty": 1,
+      "importance": 0.017,
+      "hours": 12,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Bootstrap",
+      "aliases": [],
+      "category": "FRONTEND",
+      "subcategory": "styling",
+      "related_skills": [
+        "CSS",
+        "Responsive Design",
+        "Tailwind CSS"
+      ],
+      "prerequisites": [
+        "CSS"
+      ],
+      "difficulty": 1,
+      "importance": 0.0,
+      "hours": 10,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "React",
+      "aliases": [
+        "react.js",
+        "reactjs",
+        "react js"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "Redux",
+        "Next.js",
+        "React Native",
+        "Angular",
+        "Vue.js"
+      ],
+      "prerequisites": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "difficulty": 2,
+      "importance": 0.256,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Redux",
+      "aliases": [
+        "redux toolkit",
+        "rtk"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "state",
+      "related_skills": [],
+      "prerequisites": [
+        "React"
+      ],
+      "difficulty": 3,
+      "importance": 0.034,
+      "hours": 20,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Next.js",
+      "aliases": [
+        "nextjs",
+        "next js"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "React",
+        "Angular",
+        "Vue.js"
+      ],
+      "prerequisites": [
+        "React"
+      ],
+      "difficulty": 3,
+      "importance": 0.017,
+      "hours": 35,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Angular",
+      "aliases": [
+        "angularjs",
+        "angular.js"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "React",
+        "Next.js",
+        "Vue.js"
+      ],
+      "prerequisites": [
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Vue.js",
+      "aliases": [
+        "vue",
+        "vuejs"
+      ],
+      "category": "FRONTEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "React",
+        "Next.js",
+        "Angular"
+      ],
+      "prerequisites": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 45,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Jest",
+      "aliases": [],
+      "category": "FRONTEND",
+      "subcategory": "testing",
+      "related_skills": [],
+      "prerequisites": [
+        "JavaScript"
+      ],
+      "difficulty": 2,
+      "importance": 0.017,
+      "hours": 15,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Figma",
+      "aliases": [],
+      "category": "TOOL",
+      "subcategory": "design",
+      "related_skills": [],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.017,
+      "hours": 15,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "REST API",
+      "aliases": [
+        "rest",
+        "restful",
+        "rest apis",
+        "restful api"
+      ],
+      "category": "BACKEND",
+      "subcategory": "api",
+      "related_skills": [
+        "System Design",
+        "GraphQL",
+        "Authentication & Authorization",
+        "Express.js",
+        "FastAPI",
+        "Microservices"
+      ],
+      "prerequisites": [
+        "HTTP & Web Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.641,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "GraphQL",
+      "aliases": [],
+      "category": "BACKEND",
+      "subcategory": "api",
+      "related_skills": [
+        "REST API"
+      ],
+      "prerequisites": [
+        "REST API"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Authentication & Authorization",
+      "aliases": [
+        "jwt",
+        "oauth",
+        "auth"
+      ],
+      "category": "BACKEND",
+      "subcategory": "security",
+      "related_skills": [],
+      "prerequisites": [
+        "REST API"
+      ],
+      "difficulty": 3,
+      "importance": 0.205,
+      "hours": 25,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Node.js",
+      "aliases": [
+        "nodejs",
+        "node",
+        "node js"
+      ],
+      "category": "BACKEND",
+      "subcategory": "runtime",
+      "related_skills": [
+        "Express.js"
+      ],
+      "prerequisites": [
+        "JavaScript"
+      ],
+      "difficulty": 2,
+      "importance": 0.171,
+      "hours": 40,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Express.js",
+      "aliases": [
+        "express",
+        "expressjs"
+      ],
+      "category": "BACKEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "Django",
+        "Flask",
+        "FastAPI",
+        "Spring Boot",
+        "ASP.NET",
+        "Laravel"
+      ],
+      "prerequisites": [
+        "Node.js",
+        "REST API"
+      ],
+      "difficulty": 2,
+      "importance": 0.12,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Django",
+      "aliases": [],
+      "category": "BACKEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "Express.js",
+        "Flask",
+        "FastAPI",
+        "Spring Boot",
+        "ASP.NET",
+        "Laravel"
+      ],
+      "prerequisites": [
+        "Python"
+      ],
+      "difficulty": 2,
+      "importance": 0.068,
+      "hours": 45,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Flask",
+      "aliases": [],
+      "category": "BACKEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "Express.js",
+        "Django",
+        "FastAPI",
+        "Spring Boot",
+        "ASP.NET",
+        "Laravel"
+      ],
+      "prerequisites": [
+        "Python"
+      ],
+      "difficulty": 2,
+      "importance": 0.017,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "FastAPI",
+      "aliases": [
+        "fast api"
+      ],
+      "category": "BACKEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "Express.js",
+        "Django",
+        "Flask",
+        "Spring Boot",
+        "ASP.NET",
+        "Laravel"
+      ],
+      "prerequisites": [
+        "Python",
+        "REST API"
+      ],
+      "difficulty": 2,
+      "importance": 0.051,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Spring Boot",
+      "aliases": [
+        "spring",
+        "springboot"
+      ],
+      "category": "BACKEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "Express.js",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "ASP.NET",
+        "Laravel"
+      ],
+      "prerequisites": [
+        "Java",
+        "Object Oriented Programming"
+      ],
+      "difficulty": 3,
+      "importance": 0.085,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "ASP.NET",
+      "aliases": [
+        "asp net",
+        ".net",
+        "dotnet"
+      ],
+      "category": "BACKEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "Express.js",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "Spring Boot",
+        "Laravel"
+      ],
+      "prerequisites": [
+        "C#"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Laravel",
+      "aliases": [],
+      "category": "BACKEND",
+      "subcategory": "framework",
+      "related_skills": [
+        "Express.js",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "Spring Boot",
+        "ASP.NET"
+      ],
+      "prerequisites": [
+        "PHP"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 45,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Microservices",
+      "aliases": [
+        "microservice architecture"
+      ],
+      "category": "BACKEND",
+      "subcategory": "architecture",
+      "related_skills": [],
+      "prerequisites": [
+        "REST API",
+        "Docker"
+      ],
+      "difficulty": 4,
+      "importance": 0.034,
+      "hours": 50,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Apache Kafka",
+      "aliases": [
+        "kafka",
+        "message queues"
+      ],
+      "category": "BACKEND",
+      "subcategory": "messaging",
+      "related_skills": [],
+      "prerequisites": [
+        "REST API"
+      ],
+      "difficulty": 4,
+      "importance": 0.017,
+      "hours": 35,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Postman",
+      "aliases": [],
+      "category": "TOOL",
+      "subcategory": "api",
+      "related_skills": [],
+      "prerequisites": [
+        "REST API"
+      ],
+      "difficulty": 1,
+      "importance": 0.051,
+      "hours": 8,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "MySQL",
+      "aliases": [],
+      "category": "DATABASE",
+      "subcategory": "relational",
+      "related_skills": [
+        "PostgreSQL",
+        "Oracle"
+      ],
+      "prerequisites": [
+        "SQL"
+      ],
+      "difficulty": 2,
+      "importance": 0.026,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "PostgreSQL",
+      "aliases": [
+        "postgres",
+        "psql"
+      ],
+      "category": "DATABASE",
+      "subcategory": "relational",
+      "related_skills": [
+        "MySQL",
+        "Oracle"
+      ],
+      "prerequisites": [
+        "SQL"
+      ],
+      "difficulty": 2,
+      "importance": 0.026,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Oracle",
+      "aliases": [
+        "oracle db",
+        "plsql",
+        "pl/sql"
+      ],
+      "category": "DATABASE",
+      "subcategory": "relational",
+      "related_skills": [
+        "MySQL",
+        "PostgreSQL"
+      ],
+      "prerequisites": [
+        "SQL"
+      ],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 30,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "MongoDB",
+      "aliases": [
+        "mongo",
+        "mongoose"
+      ],
+      "category": "DATABASE",
+      "subcategory": "document",
+      "related_skills": [],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.111,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Redis",
+      "aliases": [],
+      "category": "DATABASE",
+      "subcategory": "cache",
+      "related_skills": [],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.017,
+      "hours": 15,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Elasticsearch",
+      "aliases": [
+        "elastic search"
+      ],
+      "category": "DATABASE",
+      "subcategory": "search",
+      "related_skills": [],
+      "prerequisites": [
+        "REST API"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Firebase",
+      "aliases": [],
+      "category": "DATABASE",
+      "subcategory": "baas",
+      "related_skills": [],
+      "prerequisites": [
+        "JavaScript"
+      ],
+      "difficulty": 1,
+      "importance": 0.026,
+      "hours": 15,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Database Design",
+      "aliases": [
+        "data modelling",
+        "schema design",
+        "normalization"
+      ],
+      "category": "DATABASE",
+      "subcategory": "modelling",
+      "related_skills": [],
+      "prerequisites": [
+        "SQL"
+      ],
+      "difficulty": 3,
+      "importance": 0.171,
+      "hours": 30,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Docker",
+      "aliases": [
+        "containerization",
+        "containerisation"
+      ],
+      "category": "DEVOPS",
+      "subcategory": "containers",
+      "related_skills": [
+        "Microservices",
+        "Kubernetes",
+        "MLOps"
+      ],
+      "prerequisites": [
+        "Linux"
+      ],
+      "difficulty": 2,
+      "importance": 0.393,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Kubernetes",
+      "aliases": [
+        "k8s"
+      ],
+      "category": "DEVOPS",
+      "subcategory": "orchestration",
+      "related_skills": [],
+      "prerequisites": [
+        "Docker"
+      ],
+      "difficulty": 4,
+      "importance": 0.162,
+      "hours": 50,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "CI/CD",
+      "aliases": [
+        "ci cd",
+        "continuous integration",
+        "continuous deployment"
+      ],
+      "category": "DEVOPS",
+      "subcategory": "automation",
+      "related_skills": [
+        "Jenkins"
+      ],
+      "prerequisites": [
+        "Git"
+      ],
+      "difficulty": 3,
+      "importance": 0.179,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Jenkins",
+      "aliases": [],
+      "category": "DEVOPS",
+      "subcategory": "automation",
+      "related_skills": [
+        "CI/CD"
+      ],
+      "prerequisites": [
+        "CI/CD"
+      ],
+      "difficulty": 2,
+      "importance": 0.017,
+      "hours": 15,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Terraform",
+      "aliases": [],
+      "category": "DEVOPS",
+      "subcategory": "iac",
+      "related_skills": [
+        "Ansible"
+      ],
+      "prerequisites": [
+        "Linux"
+      ],
+      "difficulty": 3,
+      "importance": 0.111,
+      "hours": 30,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Ansible",
+      "aliases": [],
+      "category": "DEVOPS",
+      "subcategory": "iac",
+      "related_skills": [
+        "Terraform"
+      ],
+      "prerequisites": [
+        "Linux"
+      ],
+      "difficulty": 3,
+      "importance": 0.017,
+      "hours": 20,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Nginx",
+      "aliases": [],
+      "category": "DEVOPS",
+      "subcategory": "web-server",
+      "related_skills": [],
+      "prerequisites": [
+        "Linux"
+      ],
+      "difficulty": 2,
+      "importance": 0.017,
+      "hours": 12,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Monitoring & Observability",
+      "aliases": [
+        "prometheus",
+        "grafana",
+        "observability"
+      ],
+      "category": "DEVOPS",
+      "subcategory": "operations",
+      "related_skills": [],
+      "prerequisites": [
+        "Linux"
+      ],
+      "difficulty": 3,
+      "importance": 0.137,
+      "hours": 25,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "AWS",
+      "aliases": [
+        "amazon web services",
+        "ec2",
+        "s3 bucket"
+      ],
+      "category": "CLOUD",
+      "subcategory": "provider",
+      "related_skills": [
+        "Azure",
+        "Google Cloud"
+      ],
+      "prerequisites": [
+        "Linux",
+        "Computer Networks"
+      ],
+      "difficulty": 3,
+      "importance": 0.214,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Azure",
+      "aliases": [
+        "microsoft azure"
+      ],
+      "category": "CLOUD",
+      "subcategory": "provider",
+      "related_skills": [
+        "AWS",
+        "Google Cloud"
+      ],
+      "prerequisites": [
+        "Linux",
+        "Computer Networks"
+      ],
+      "difficulty": 3,
+      "importance": 0.009,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Google Cloud",
+      "aliases": [
+        "gcp",
+        "google cloud platform"
+      ],
+      "category": "CLOUD",
+      "subcategory": "provider",
+      "related_skills": [
+        "AWS",
+        "Azure"
+      ],
+      "prerequisites": [
+        "Linux",
+        "Computer Networks"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Excel",
+      "aliases": [
+        "ms excel",
+        "advanced excel",
+        "pivot tables"
+      ],
+      "category": "DATA",
+      "subcategory": "analysis",
+      "related_skills": [
+        "Data Analysis",
+        "Data Visualization"
+      ],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.205,
+      "hours": 20,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Statistics",
+      "aliases": [
+        "statistical analysis",
+        "probability"
+      ],
+      "category": "DATA",
+      "subcategory": "maths",
+      "related_skills": [
+        "A/B Testing",
+        "Machine Learning",
+        "Product Analytics",
+        "Linear Algebra"
+      ],
+      "prerequisites": [],
+      "difficulty": 3,
+      "importance": 0.333,
+      "hours": 50,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Linear Algebra",
+      "aliases": [
+        "matrices",
+        "vectors"
+      ],
+      "category": "DATA",
+      "subcategory": "maths",
+      "related_skills": [
+        "Deep Learning",
+        "Statistics"
+      ],
+      "prerequisites": [],
+      "difficulty": 3,
+      "importance": 0.051,
+      "hours": 35,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "NumPy",
+      "aliases": [
+        "numpy"
+      ],
+      "category": "DATA",
+      "subcategory": "library",
+      "related_skills": [
+        "Pandas"
+      ],
+      "prerequisites": [
+        "Python"
+      ],
+      "difficulty": 1,
+      "importance": 0.137,
+      "hours": 15,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Pandas",
+      "aliases": [],
+      "category": "DATA",
+      "subcategory": "library",
+      "related_skills": [
+        "scikit-learn",
+        "Machine Learning",
+        "Feature Engineering",
+        "NumPy"
+      ],
+      "prerequisites": [
+        "NumPy"
+      ],
+      "difficulty": 2,
+      "importance": 0.231,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Jupyter",
+      "aliases": [
+        "jupyter notebook",
+        "google colab",
+        "colab"
+      ],
+      "category": "TOOL",
+      "subcategory": "notebook",
+      "related_skills": [],
+      "prerequisites": [
+        "Python"
+      ],
+      "difficulty": 1,
+      "importance": 0.017,
+      "hours": 5,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Data Analysis",
+      "aliases": [
+        "data analytics",
+        "exploratory data analysis",
+        "eda"
+      ],
+      "category": "DATA",
+      "subcategory": "analysis",
+      "related_skills": [
+        "Excel",
+        "Data Visualization"
+      ],
+      "prerequisites": [
+        "SQL"
+      ],
+      "difficulty": 2,
+      "importance": 0.137,
+      "hours": 35,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Data Visualization",
+      "aliases": [
+        "data visualisation",
+        "matplotlib",
+        "seaborn",
+        "plotly"
+      ],
+      "category": "DATA",
+      "subcategory": "analysis",
+      "related_skills": [
+        "Excel",
+        "Data Analysis"
+      ],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.256,
+      "hours": 20,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Power BI",
+      "aliases": [
+        "powerbi"
+      ],
+      "category": "DATA",
+      "subcategory": "bi",
+      "related_skills": [
+        "Tableau"
+      ],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.077,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Tableau",
+      "aliases": [],
+      "category": "DATA",
+      "subcategory": "bi",
+      "related_skills": [
+        "Power BI"
+      ],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.034,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "A/B Testing",
+      "aliases": [
+        "experimentation",
+        "hypothesis testing"
+      ],
+      "category": "DATA",
+      "subcategory": "experimentation",
+      "related_skills": [],
+      "prerequisites": [
+        "Statistics"
+      ],
+      "difficulty": 3,
+      "importance": 0.103,
+      "hours": 20,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "scikit-learn",
+      "aliases": [
+        "sklearn",
+        "scikit learn"
+      ],
+      "category": "ML",
+      "subcategory": "library",
+      "related_skills": [],
+      "prerequisites": [
+        "Pandas"
+      ],
+      "difficulty": 2,
+      "importance": 0.094,
+      "hours": 35,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Machine Learning",
+      "aliases": [
+        "ml",
+        "supervised learning",
+        "unsupervised learning"
+      ],
+      "category": "ML",
+      "subcategory": "core",
+      "related_skills": [
+        "Deep Learning",
+        "TensorFlow",
+        "PyTorch",
+        "MLOps",
+        "Feature Engineering"
+      ],
+      "prerequisites": [
+        "Python",
+        "Statistics",
+        "Pandas"
+      ],
+      "difficulty": 4,
+      "importance": 0.239,
+      "hours": 90,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Feature Engineering",
+      "aliases": [],
+      "category": "ML",
+      "subcategory": "core",
+      "related_skills": [
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "prerequisites": [
+        "Pandas"
+      ],
+      "difficulty": 3,
+      "importance": 0.077,
+      "hours": 25,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Deep Learning",
+      "aliases": [
+        "neural networks",
+        "dl"
+      ],
+      "category": "ML",
+      "subcategory": "core",
+      "related_skills": [
+        "Natural Language Processing",
+        "Computer Vision",
+        "Machine Learning",
+        "Feature Engineering"
+      ],
+      "prerequisites": [
+        "Machine Learning",
+        "Linear Algebra"
+      ],
+      "difficulty": 4,
+      "importance": 0.145,
+      "hours": 90,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "TensorFlow",
+      "aliases": [
+        "tf",
+        "keras"
+      ],
+      "category": "ML",
+      "subcategory": "framework",
+      "related_skills": [
+        "PyTorch"
+      ],
+      "prerequisites": [
+        "Machine Learning"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 40,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "PyTorch",
+      "aliases": [
+        "torch"
+      ],
+      "category": "ML",
+      "subcategory": "framework",
+      "related_skills": [
+        "TensorFlow"
+      ],
+      "prerequisites": [
+        "Machine Learning"
+      ],
+      "difficulty": 3,
+      "importance": 0.111,
+      "hours": 40,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Natural Language Processing",
+      "aliases": [
+        "nlp",
+        "text mining"
+      ],
+      "category": "ML",
+      "subcategory": "specialism",
+      "related_skills": [
+        "Computer Vision",
+        "LLM Applications"
+      ],
+      "prerequisites": [
+        "Deep Learning"
+      ],
+      "difficulty": 4,
+      "importance": 0.051,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Computer Vision",
+      "aliases": [
+        "cv",
+        "image processing",
+        "opencv"
+      ],
+      "category": "ML",
+      "subcategory": "specialism",
+      "related_skills": [
+        "Natural Language Processing",
+        "LLM Applications"
+      ],
+      "prerequisites": [
+        "Deep Learning"
+      ],
+      "difficulty": 4,
+      "importance": 0.0,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "LLM Applications",
+      "aliases": [
+        "generative ai",
+        "genai",
+        "rag",
+        "llm"
+      ],
+      "category": "ML",
+      "subcategory": "specialism",
+      "related_skills": [
+        "Natural Language Processing",
+        "Computer Vision"
+      ],
+      "prerequisites": [
+        "Python",
+        "REST API"
+      ],
+      "difficulty": 3,
+      "importance": 0.085,
+      "hours": 40,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "MLOps",
+      "aliases": [],
+      "category": "ML",
+      "subcategory": "operations",
+      "related_skills": [],
+      "prerequisites": [
+        "Machine Learning",
+        "Docker"
+      ],
+      "difficulty": 4,
+      "importance": 0.068,
+      "hours": 45,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "ETL & Data Pipelines",
+      "aliases": [
+        "etl",
+        "data pipelines",
+        "elt"
+      ],
+      "category": "DATA_ENG",
+      "subcategory": "pipelines",
+      "related_skills": [],
+      "prerequisites": [
+        "SQL",
+        "Python"
+      ],
+      "difficulty": 3,
+      "importance": 0.085,
+      "hours": 35,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Data Warehousing",
+      "aliases": [
+        "data warehouse",
+        "snowflake",
+        "bigquery"
+      ],
+      "category": "DATA_ENG",
+      "subcategory": "storage",
+      "related_skills": [],
+      "prerequisites": [
+        "SQL"
+      ],
+      "difficulty": 3,
+      "importance": 0.068,
+      "hours": 30,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Apache Airflow",
+      "aliases": [
+        "airflow"
+      ],
+      "category": "DATA_ENG",
+      "subcategory": "orchestration",
+      "related_skills": [],
+      "prerequisites": [
+        "Python"
+      ],
+      "difficulty": 3,
+      "importance": 0.026,
+      "hours": 25,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Big Data",
+      "aliases": [
+        "hadoop",
+        "spark",
+        "pyspark",
+        "apache spark"
+      ],
+      "category": "DATA_ENG",
+      "subcategory": "processing",
+      "related_skills": [],
+      "prerequisites": [
+        "Python",
+        "SQL"
+      ],
+      "difficulty": 3,
+      "importance": 0.068,
+      "hours": 45,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Android Development",
+      "aliases": [
+        "android"
+      ],
+      "category": "MOBILE",
+      "subcategory": "native",
+      "related_skills": [
+        "iOS Development"
+      ],
+      "prerequisites": [
+        "Kotlin"
+      ],
+      "difficulty": 3,
+      "importance": 0.085,
+      "hours": 70,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "iOS Development",
+      "aliases": [
+        "ios"
+      ],
+      "category": "MOBILE",
+      "subcategory": "native",
+      "related_skills": [
+        "Android Development"
+      ],
+      "prerequisites": [
+        "Swift"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 70,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "React Native",
+      "aliases": [
+        "react-native"
+      ],
+      "category": "MOBILE",
+      "subcategory": "cross-platform",
+      "related_skills": [
+        "Flutter"
+      ],
+      "prerequisites": [
+        "React"
+      ],
+      "difficulty": 3,
+      "importance": 0.0,
+      "hours": 45,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Flutter",
+      "aliases": [],
+      "category": "MOBILE",
+      "subcategory": "cross-platform",
+      "related_skills": [
+        "React Native"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.009,
+      "hours": 50,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Selenium",
+      "aliases": [],
+      "category": "QA",
+      "subcategory": "automation",
+      "related_skills": [],
+      "prerequisites": [
+        "Software Testing",
+        "Programming Fundamentals"
+      ],
+      "difficulty": 2,
+      "importance": 0.085,
+      "hours": 25,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "JUnit",
+      "aliases": [],
+      "category": "QA",
+      "subcategory": "unit",
+      "related_skills": [
+        "Pytest"
+      ],
+      "prerequisites": [
+        "Java"
+      ],
+      "difficulty": 2,
+      "importance": 0.051,
+      "hours": 12,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Pytest",
+      "aliases": [],
+      "category": "QA",
+      "subcategory": "unit",
+      "related_skills": [
+        "JUnit"
+      ],
+      "prerequisites": [
+        "Python"
+      ],
+      "difficulty": 2,
+      "importance": 0.026,
+      "hours": 10,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Performance Testing",
+      "aliases": [
+        "load testing",
+        "jmeter"
+      ],
+      "category": "QA",
+      "subcategory": "non-functional",
+      "related_skills": [],
+      "prerequisites": [
+        "Software Testing"
+      ],
+      "difficulty": 3,
+      "importance": 0.017,
+      "hours": 20,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Cybersecurity",
+      "aliases": [
+        "information security",
+        "infosec",
+        "ethical hacking"
+      ],
+      "category": "SECURITY",
+      "subcategory": "core",
+      "related_skills": [
+        "Penetration Testing",
+        "Incident Response"
+      ],
+      "prerequisites": [
+        "Computer Networks",
+        "Linux"
+      ],
+      "difficulty": 3,
+      "importance": 0.103,
+      "hours": 60,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Network Security",
+      "aliases": [
+        "firewalls",
+        "ids/ips"
+      ],
+      "category": "SECURITY",
+      "subcategory": "network",
+      "related_skills": [],
+      "prerequisites": [
+        "Computer Networks"
+      ],
+      "difficulty": 3,
+      "importance": 0.068,
+      "hours": 40,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Web Application Security",
+      "aliases": [
+        "owasp",
+        "appsec"
+      ],
+      "category": "SECURITY",
+      "subcategory": "appsec",
+      "related_skills": [],
+      "prerequisites": [
+        "HTTP & Web Fundamentals"
+      ],
+      "difficulty": 3,
+      "importance": 0.051,
+      "hours": 35,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Penetration Testing",
+      "aliases": [
+        "pentesting",
+        "pen testing"
+      ],
+      "category": "SECURITY",
+      "subcategory": "offensive",
+      "related_skills": [],
+      "prerequisites": [
+        "Cybersecurity"
+      ],
+      "difficulty": 4,
+      "importance": 0.017,
+      "hours": 70,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Incident Response",
+      "aliases": [
+        "siem",
+        "soc operations"
+      ],
+      "category": "SECURITY",
+      "subcategory": "defensive",
+      "related_skills": [],
+      "prerequisites": [
+        "Cybersecurity"
+      ],
+      "difficulty": 3,
+      "importance": 0.068,
+      "hours": 40,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Business Analysis",
+      "aliases": [
+        "business analyst",
+        "requirement gathering",
+        "brd"
+      ],
+      "category": "BUSINESS",
+      "subcategory": "analysis",
+      "related_skills": [
+        "Requirements Gathering"
+      ],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.12,
+      "hours": 40,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Requirements Gathering",
+      "aliases": [
+        "requirement analysis",
+        "user stories"
+      ],
+      "category": "BUSINESS",
+      "subcategory": "analysis",
+      "related_skills": [
+        "Business Analysis"
+      ],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.085,
+      "hours": 20,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Project Management",
+      "aliases": [
+        "pmp",
+        "project planning"
+      ],
+      "category": "BUSINESS",
+      "subcategory": "delivery",
+      "related_skills": [],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.017,
+      "hours": 30,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Product Analytics",
+      "aliases": [
+        "product metrics"
+      ],
+      "category": "BUSINESS",
+      "subcategory": "analytics",
+      "related_skills": [],
+      "prerequisites": [
+        "SQL",
+        "Statistics"
+      ],
+      "difficulty": 3,
+      "importance": 0.085,
+      "hours": 30,
+      "in_ats_taxonomy": false
+    },
+    {
+      "canonical_skill": "Jira",
+      "aliases": [],
+      "category": "TOOL",
+      "subcategory": "tracking",
+      "related_skills": [],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.043,
+      "hours": 5,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Communication",
+      "aliases": [
+        "verbal communication",
+        "written communication",
+        "presentation skills"
+      ],
+      "category": "SOFT",
+      "subcategory": "interpersonal",
+      "related_skills": [
+        "Teamwork"
+      ],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.0,
+      "hours": 20,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Teamwork",
+      "aliases": [
+        "collaboration",
+        "team player",
+        "cross-functional"
+      ],
+      "category": "SOFT",
+      "subcategory": "interpersonal",
+      "related_skills": [
+        "Communication"
+      ],
+      "prerequisites": [],
+      "difficulty": 1,
+      "importance": 0.0,
+      "hours": 10,
+      "in_ats_taxonomy": true
+    },
+    {
+      "canonical_skill": "Problem Solving",
+      "aliases": [
+        "analytical thinking",
+        "critical thinking",
+        "problem-solving"
+      ],
+      "category": "SOFT",
+      "subcategory": "cognitive",
+      "related_skills": [],
+      "prerequisites": [],
+      "difficulty": 2,
+      "importance": 0.0,
+      "hours": 20,
+      "in_ats_taxonomy": true
+    }
+  ]
+}

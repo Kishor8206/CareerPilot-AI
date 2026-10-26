@@ -1,0 +1,751 @@
+{
+  "knowledge_version": "career-knowledge-v1",
+  "edges": [
+    {
+      "from": "Statistics",
+      "to": "A/B Testing"
+    },
+    {
+      "from": "C#",
+      "to": "ASP.NET"
+    },
+    {
+      "from": "Linux",
+      "to": "AWS"
+    },
+    {
+      "from": "Computer Networks",
+      "to": "AWS"
+    },
+    {
+      "from": "Data Structures",
+      "to": "Algorithms"
+    },
+    {
+      "from": "Kotlin",
+      "to": "Android Development"
+    },
+    {
+      "from": "TypeScript",
+      "to": "Angular"
+    },
+    {
+      "from": "HTML",
+      "to": "Angular"
+    },
+    {
+      "from": "CSS",
+      "to": "Angular"
+    },
+    {
+      "from": "Linux",
+      "to": "Ansible"
+    },
+    {
+      "from": "Python",
+      "to": "Apache Airflow"
+    },
+    {
+      "from": "REST API",
+      "to": "Apache Kafka"
+    },
+    {
+      "from": "REST API",
+      "to": "Authentication & Authorization"
+    },
+    {
+      "from": "Linux",
+      "to": "Azure"
+    },
+    {
+      "from": "Computer Networks",
+      "to": "Azure"
+    },
+    {
+      "from": "Python",
+      "to": "Big Data"
+    },
+    {
+      "from": "SQL",
+      "to": "Big Data"
+    },
+    {
+      "from": "CSS",
+      "to": "Bootstrap"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "C"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "C#"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "C++"
+    },
+    {
+      "from": "Git",
+      "to": "CI/CD"
+    },
+    {
+      "from": "HTML",
+      "to": "CSS"
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Computer Vision"
+    },
+    {
+      "from": "Computer Networks",
+      "to": "Cybersecurity"
+    },
+    {
+      "from": "Linux",
+      "to": "Cybersecurity"
+    },
+    {
+      "from": "SQL",
+      "to": "DBMS"
+    },
+    {
+      "from": "Algorithms",
+      "to": "DSA Problem Solving"
+    },
+    {
+      "from": "SQL",
+      "to": "Data Analysis"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Data Structures"
+    },
+    {
+      "from": "SQL",
+      "to": "Data Warehousing"
+    },
+    {
+      "from": "SQL",
+      "to": "Database Design"
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Deep Learning"
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Deep Learning"
+    },
+    {
+      "from": "Python",
+      "to": "Django"
+    },
+    {
+      "from": "Linux",
+      "to": "Docker"
+    },
+    {
+      "from": "SQL",
+      "to": "ETL & Data Pipelines"
+    },
+    {
+      "from": "Python",
+      "to": "ETL & Data Pipelines"
+    },
+    {
+      "from": "REST API",
+      "to": "Elasticsearch"
+    },
+    {
+      "from": "Node.js",
+      "to": "Express.js"
+    },
+    {
+      "from": "REST API",
+      "to": "Express.js"
+    },
+    {
+      "from": "Python",
+      "to": "FastAPI"
+    },
+    {
+      "from": "REST API",
+      "to": "FastAPI"
+    },
+    {
+      "from": "Pandas",
+      "to": "Feature Engineering"
+    },
+    {
+      "from": "JavaScript",
+      "to": "Firebase"
+    },
+    {
+      "from": "Python",
+      "to": "Flask"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Flutter"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Go"
+    },
+    {
+      "from": "Linux",
+      "to": "Google Cloud"
+    },
+    {
+      "from": "Computer Networks",
+      "to": "Google Cloud"
+    },
+    {
+      "from": "REST API",
+      "to": "GraphQL"
+    },
+    {
+      "from": "Cybersecurity",
+      "to": "Incident Response"
+    },
+    {
+      "from": "Java",
+      "to": "JUnit"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Java"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "JavaScript"
+    },
+    {
+      "from": "CI/CD",
+      "to": "Jenkins"
+    },
+    {
+      "from": "JavaScript",
+      "to": "Jest"
+    },
+    {
+      "from": "Python",
+      "to": "Jupyter"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Kotlin"
+    },
+    {
+      "from": "Docker",
+      "to": "Kubernetes"
+    },
+    {
+      "from": "Python",
+      "to": "LLM Applications"
+    },
+    {
+      "from": "REST API",
+      "to": "LLM Applications"
+    },
+    {
+      "from": "PHP",
+      "to": "Laravel"
+    },
+    {
+      "from": "Machine Learning",
+      "to": "MLOps"
+    },
+    {
+      "from": "Docker",
+      "to": "MLOps"
+    },
+    {
+      "from": "Python",
+      "to": "Machine Learning"
+    },
+    {
+      "from": "Statistics",
+      "to": "Machine Learning"
+    },
+    {
+      "from": "Pandas",
+      "to": "Machine Learning"
+    },
+    {
+      "from": "REST API",
+      "to": "Microservices"
+    },
+    {
+      "from": "Docker",
+      "to": "Microservices"
+    },
+    {
+      "from": "Linux",
+      "to": "Monitoring & Observability"
+    },
+    {
+      "from": "SQL",
+      "to": "MySQL"
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Natural Language Processing"
+    },
+    {
+      "from": "Computer Networks",
+      "to": "Network Security"
+    },
+    {
+      "from": "React",
+      "to": "Next.js"
+    },
+    {
+      "from": "Linux",
+      "to": "Nginx"
+    },
+    {
+      "from": "JavaScript",
+      "to": "Node.js"
+    },
+    {
+      "from": "Python",
+      "to": "NumPy"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Object Oriented Programming"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Operating Systems"
+    },
+    {
+      "from": "SQL",
+      "to": "Oracle"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "PHP"
+    },
+    {
+      "from": "NumPy",
+      "to": "Pandas"
+    },
+    {
+      "from": "Cybersecurity",
+      "to": "Penetration Testing"
+    },
+    {
+      "from": "Software Testing",
+      "to": "Performance Testing"
+    },
+    {
+      "from": "SQL",
+      "to": "PostgreSQL"
+    },
+    {
+      "from": "REST API",
+      "to": "Postman"
+    },
+    {
+      "from": "SQL",
+      "to": "Product Analytics"
+    },
+    {
+      "from": "Statistics",
+      "to": "Product Analytics"
+    },
+    {
+      "from": "Machine Learning",
+      "to": "PyTorch"
+    },
+    {
+      "from": "Python",
+      "to": "Pytest"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Python"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "R"
+    },
+    {
+      "from": "HTTP & Web Fundamentals",
+      "to": "REST API"
+    },
+    {
+      "from": "JavaScript",
+      "to": "React"
+    },
+    {
+      "from": "HTML",
+      "to": "React"
+    },
+    {
+      "from": "CSS",
+      "to": "React"
+    },
+    {
+      "from": "React",
+      "to": "React Native"
+    },
+    {
+      "from": "React",
+      "to": "Redux"
+    },
+    {
+      "from": "CSS",
+      "to": "Responsive Design"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Ruby"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Rust"
+    },
+    {
+      "from": "Java",
+      "to": "Scala"
+    },
+    {
+      "from": "Software Testing",
+      "to": "Selenium"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Selenium"
+    },
+    {
+      "from": "Linux",
+      "to": "Shell Scripting"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Software Testing"
+    },
+    {
+      "from": "Java",
+      "to": "Spring Boot"
+    },
+    {
+      "from": "Object Oriented Programming",
+      "to": "Spring Boot"
+    },
+    {
+      "from": "Programming Fundamentals",
+      "to": "Swift"
+    },
+    {
+      "from": "DBMS",
+      "to": "System Design"
+    },
+    {
+      "from": "Computer Networks",
+      "to": "System Design"
+    },
+    {
+      "from": "REST API",
+      "to": "System Design"
+    },
+    {
+      "from": "CSS",
+      "to": "Tailwind CSS"
+    },
+    {
+      "from": "Machine Learning",
+      "to": "TensorFlow"
+    },
+    {
+      "from": "Linux",
+      "to": "Terraform"
+    },
+    {
+      "from": "JavaScript",
+      "to": "TypeScript"
+    },
+    {
+      "from": "JavaScript",
+      "to": "Vue.js"
+    },
+    {
+      "from": "HTML",
+      "to": "Vue.js"
+    },
+    {
+      "from": "CSS",
+      "to": "Vue.js"
+    },
+    {
+      "from": "HTTP & Web Fundamentals",
+      "to": "Web Application Security"
+    },
+    {
+      "from": "Swift",
+      "to": "iOS Development"
+    },
+    {
+      "from": "Pandas",
+      "to": "scikit-learn"
+    }
+  ],
+  "topological_order": [
+    "Agile",
+    "Business Analysis",
+    "Communication",
+    "Computer Networks",
+    "Data Visualization",
+    "Excel",
+    "Figma",
+    "Git",
+    "HTML",
+    "HTTP & Web Fundamentals",
+    "Jira",
+    "Linear Algebra",
+    "Linux",
+    "MongoDB",
+    "Power BI",
+    "Problem Solving",
+    "Programming Fundamentals",
+    "Project Management",
+    "Redis",
+    "Requirements Gathering",
+    "SQL",
+    "Statistics",
+    "Tableau",
+    "Teamwork",
+    "A/B Testing",
+    "AWS",
+    "Ansible",
+    "Azure",
+    "C",
+    "C#",
+    "C++",
+    "CI/CD",
+    "CSS",
+    "Cybersecurity",
+    "DBMS",
+    "Data Analysis",
+    "Data Structures",
+    "Data Warehousing",
+    "Database Design",
+    "Docker",
+    "Flutter",
+    "Go",
+    "Google Cloud",
+    "Java",
+    "JavaScript",
+    "Kotlin",
+    "Monitoring & Observability",
+    "MySQL",
+    "Network Security",
+    "Nginx",
+    "Object Oriented Programming",
+    "Operating Systems",
+    "Oracle",
+    "PHP",
+    "PostgreSQL",
+    "Product Analytics",
+    "Python",
+    "R",
+    "REST API",
+    "Ruby",
+    "Rust",
+    "Shell Scripting",
+    "Software Testing",
+    "Swift",
+    "Terraform",
+    "Web Application Security",
+    "ASP.NET",
+    "Algorithms",
+    "Android Development",
+    "Apache Airflow",
+    "Apache Kafka",
+    "Authentication & Authorization",
+    "Big Data",
+    "Bootstrap",
+    "Django",
+    "ETL & Data Pipelines",
+    "Elasticsearch",
+    "FastAPI",
+    "Firebase",
+    "Flask",
+    "GraphQL",
+    "Incident Response",
+    "JUnit",
+    "Jenkins",
+    "Jest",
+    "Jupyter",
+    "Kubernetes",
+    "LLM Applications",
+    "Laravel",
+    "Microservices",
+    "Node.js",
+    "NumPy",
+    "Penetration Testing",
+    "Performance Testing",
+    "Postman",
+    "Pytest",
+    "React",
+    "Responsive Design",
+    "Scala",
+    "Selenium",
+    "Spring Boot",
+    "System Design",
+    "Tailwind CSS",
+    "TypeScript",
+    "Vue.js",
+    "iOS Development",
+    "Angular",
+    "DSA Problem Solving",
+    "Express.js",
+    "Next.js",
+    "Pandas",
+    "React Native",
+    "Redux",
+    "Feature Engineering",
+    "Machine Learning",
+    "scikit-learn",
+    "Deep Learning",
+    "MLOps",
+    "PyTorch",
+    "TensorFlow",
+    "Computer Vision",
+    "Natural Language Processing"
+  ],
+  "depth": {
+    "Programming Fundamentals": 0,
+    "Object Oriented Programming": 1,
+    "Data Structures": 1,
+    "Algorithms": 2,
+    "DSA Problem Solving": 3,
+    "Operating Systems": 1,
+    "Computer Networks": 0,
+    "SQL": 0,
+    "DBMS": 1,
+    "HTTP & Web Fundamentals": 0,
+    "REST API": 1,
+    "System Design": 2,
+    "Git": 0,
+    "Linux": 0,
+    "Shell Scripting": 1,
+    "Agile": 0,
+    "Software Testing": 1,
+    "Python": 1,
+    "Java": 1,
+    "JavaScript": 1,
+    "C": 1,
+    "C++": 1,
+    "C#": 1,
+    "Go": 1,
+    "Rust": 1,
+    "Kotlin": 1,
+    "Swift": 1,
+    "PHP": 1,
+    "Ruby": 1,
+    "R": 1,
+    "TypeScript": 2,
+    "Scala": 2,
+    "HTML": 0,
+    "CSS": 1,
+    "Responsive Design": 2,
+    "Tailwind CSS": 2,
+    "Bootstrap": 2,
+    "React": 2,
+    "Redux": 3,
+    "Next.js": 3,
+    "Angular": 3,
+    "Vue.js": 2,
+    "Jest": 2,
+    "Figma": 0,
+    "GraphQL": 2,
+    "Authentication & Authorization": 2,
+    "Node.js": 2,
+    "Express.js": 3,
+    "Django": 2,
+    "Flask": 2,
+    "FastAPI": 2,
+    "Spring Boot": 2,
+    "ASP.NET": 2,
+    "Laravel": 2,
+    "Docker": 1,
+    "Microservices": 2,
+    "Apache Kafka": 2,
+    "Postman": 2,
+    "MySQL": 1,
+    "PostgreSQL": 1,
+    "Oracle": 1,
+    "MongoDB": 0,
+    "Redis": 0,
+    "Elasticsearch": 2,
+    "Firebase": 2,
+    "Database Design": 1,
+    "Kubernetes": 2,
+    "CI/CD": 1,
+    "Jenkins": 2,
+    "Terraform": 1,
+    "Ansible": 1,
+    "Nginx": 1,
+    "Monitoring & Observability": 1,
+    "AWS": 1,
+    "Azure": 1,
+    "Google Cloud": 1,
+    "Excel": 0,
+    "Statistics": 0,
+    "Linear Algebra": 0,
+    "NumPy": 2,
+    "Pandas": 3,
+    "Jupyter": 2,
+    "Data Analysis": 1,
+    "Data Visualization": 0,
+    "Power BI": 0,
+    "Tableau": 0,
+    "A/B Testing": 1,
+    "scikit-learn": 4,
+    "Machine Learning": 4,
+    "Feature Engineering": 4,
+    "Deep Learning": 5,
+    "TensorFlow": 5,
+    "PyTorch": 5,
+    "Natural Language Processing": 6,
+    "Computer Vision": 6,
+    "LLM Applications": 2,
+    "MLOps": 5,
+    "ETL & Data Pipelines": 2,
+    "Data Warehousing": 1,
+    "Apache Airflow": 2,
+    "Big Data": 2,
+    "Android Development": 2,
+    "iOS Development": 2,
+    "React Native": 3,
+    "Flutter": 1,
+    "Selenium": 2,
+    "JUnit": 2,
+    "Pytest": 2,
+    "Performance Testing": 2,
+    "Cybersecurity": 1,
+    "Network Security": 1,
+    "Web Application Security": 1,
+    "Penetration Testing": 2,
+    "Incident Response": 2,
+    "Business Analysis": 0,
+    "Requirements Gathering": 0,
+    "Project Management": 0,
+    "Product Analytics": 1,
+    "Jira": 0,
+    "Communication": 0,
+    "Teamwork": 0,
+    "Problem Solving": 0
+  },
+  "stats": {
+    "skills": 122,
+    "edges": 123,
+    "max_depth": 6,
+    "roots": 24
+  }
+}

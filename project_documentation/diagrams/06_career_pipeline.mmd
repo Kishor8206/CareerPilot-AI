@@ -1,0 +1,24 @@
+flowchart TD
+  n0["Profile + current skills + target role (+ ATS result, + progress)"]
+  n1["Skill normalisation (122 skills, 214 aliases)"]
+  n2["Prerequisite inference over the skill graph (123 edges, acyclic)"]
+  n3["Skill-gap analysis: required level above current level"]
+  n4["Priority score -> HIGH / MEDIUM / LOW with reasons"]
+  n5["Planner: phases in prerequisite (topological) order"]
+  n6["Time budget: 75% learning, 15% projects, 10% revision"]
+  n7["Resource candidates by ID from the verified catalogue (270)"]
+  n8["OPTIONAL career model, Qwen3-1.7B (v1 trained, not usable)"]
+  n9["Validator: schema + every fact; repair -> retry -> planner"]
+  n10["Resource IDs resolved to verified links + YouTube videos"]
+  n11["Career plan stored and shown at /career"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6
+  n6 --> n7
+  n7 --> n8
+  n8 --> n9
+  n9 --> n10
+  n10 --> n11

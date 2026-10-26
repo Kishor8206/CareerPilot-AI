@@ -1,0 +1,39 @@
+# ============================================================
+# CareerPilot AI - Python AI/ML service
+# Install:  python -m pip install -r ai-service/requirements.txt
+# ============================================================
+
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.5
+pydantic-settings==2.7.1
+python-multipart==0.0.20
+httpx==0.28.1
+
+# --- Data / ML ---
+numpy==2.2.1
+pandas==2.2.3
+scikit-learn==1.6.1
+joblib==1.4.2
+scipy==1.15.1
+
+# --- Document parsing (resume pipeline, §8) ---
+PyMuPDF==1.25.2
+python-docx==1.1.2
+
+# --- NLP ---
+# spaCy powers named-entity extraction. After install, download the model:
+#   python -m spacy download en_core_web_sm
+# The NLP layer degrades to rule-based extraction if the model is absent.
+spacy==3.8.3
+
+# --- Testing ---
+pytest==8.3.4
+pytest-asyncio==0.25.2
+
+# ============================================================
+# OPTIONAL EXTRAS - see requirements-optional.txt
+# The service runs fully without them, using the offline hash-embedding
+# provider, the in-process numpy vector store and the mock LLM provider.
+# ============================================================

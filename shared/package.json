@@ -1,0 +1,29 @@
+{
+  "name": "@careerpilot/shared",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Types, enums and constants shared between the React frontend and the Node.js backend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -p tsconfig.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "watch": "tsc -p tsconfig.json --watch",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

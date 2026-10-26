@@ -1,0 +1,90 @@
+{
+  "dataset_version": "career-sft-v1",
+  "validated": "2026-10-07 10:53:51",
+  "generated": 10000,
+  "valid": 9916,
+  "rejected": 84,
+  "reject_rate": 0.0084,
+  "rejects_by_reason": {
+    "too_long": 84
+  },
+  "reject_examples": {
+    "too_long": "cr-758216cbb8aa: 4695 tokens"
+  },
+  "contradictory_prompts": 0,
+  "max_tokens": 4096,
+  "tokens": {
+    "mean": 2222,
+    "median": 2197,
+    "p95": 3528,
+    "max": 4089
+  },
+  "output_tokens": {
+    "mean": 1204,
+    "max": 2883
+  },
+  "by_task": {
+    "A": 204,
+    "AA": 269,
+    "AB": 391,
+    "AC": 194,
+    "AD": 196,
+    "AE": 219,
+    "AF": 205,
+    "B": 208,
+    "C": 199,
+    "D": 340,
+    "E": 308,
+    "F": 298,
+    "G": 277,
+    "H": 638,
+    "I": 413,
+    "J": 322,
+    "K": 216,
+    "L": 201,
+    "M": 312,
+    "N": 413,
+    "O": 395,
+    "P": 426,
+    "Q": 402,
+    "R": 298,
+    "S": 336,
+    "T": 366,
+    "U": 326,
+    "V": 307,
+    "W": 383,
+    "X": 311,
+    "Y": 295,
+    "Z": 248
+  },
+  "by_role": {
+    "AI Engineer": 475,
+    "Backend Developer": 548,
+    "Business Analyst": 519,
+    "Cloud Engineer": 558,
+    "Cybersecurity Analyst": 505,
+    "Data Analyst": 494,
+    "Data Engineer": 507,
+    "Data Scientist": 503,
+    "DevOps Engineer": 484,
+    "Frontend Developer": 523,
+    "Full Stack Developer": 389,
+    "Java Developer": 509,
+    "MERN Developer": 489,
+    "Machine Learning Engineer": 477,
+    "Mobile Developer": 515,
+    "Product Analyst": 447,
+    "Python Developer": 477,
+    "QA Engineer": 507,
+    "Site Reliability Engineer": 452,
+    "Software Engineer": 538
+  },
+  "by_archetype": {
+    "intermediate": 4266,
+    "beginner": 3846,
+    "advanced": 730,
+    "blank": 738,
+    "switcher": 336
+  },
+  "distinct_learner_profiles": 9336
+}

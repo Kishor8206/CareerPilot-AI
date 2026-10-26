@@ -1,0 +1,20 @@
+flowchart TD
+  n0["Monaco editor: student implements one function"]
+  n1["POST /api/v1/coding/problems/:id/submit  (auth, rate limit, Zod)"]
+  n2["coding.service: load problem; hidden tests only on Submit"]
+  n3["codegen: prelude + student code + harness for the language"]
+  n4["Semaphore: at most N sandboxes at once (no external queue)"]
+  n5["docker run: one throw-away container"]
+  n6["Compile once; host streams test inputs one at a time"]
+  n7["Container reports exit code, time, memory, result JSON"]
+  n8["Judge on host compares with expected outputs"]
+  n9["Verdict + score stored; AI static review added afterwards"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6
+  n6 --> n7
+  n7 --> n8
+  n8 --> n9

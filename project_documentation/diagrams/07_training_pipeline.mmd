@@ -1,0 +1,22 @@
+flowchart TD
+  n0["Source data (downloaded, inspected, licence recorded)"]
+  n1["Clean, PII scrub, dedup, near-duplicate clustering"]
+  n2["Split by cluster / learner profile BEFORE sampling"]
+  n3["Weak labels or planner targets (deterministic teacher)"]
+  n4["Chat-format examples; validate every example; leakage audit"]
+  n5["Load base model in 4-bit (NF4) on a Colab T4"]
+  n6["Attach LoRA adapters r=16, alpha=32 to 7 projection layers"]
+  n7["SFT with completion-only loss, cosine LR 1e-4"]
+  n8["Checkpoints to Drive, early stopping on validation loss"]
+  n9["Evaluate: fine-tuned vs base vs deterministic baselines"]
+  n10["Serve adapter (vLLM) behind validator + fallback"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6
+  n6 --> n7
+  n7 --> n8
+  n8 --> n9
+  n9 --> n10

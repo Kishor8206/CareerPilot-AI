@@ -1,0 +1,36 @@
+# CareerPilot ATS fine-tuning pipeline.
+#
+# Two environments, because they need different things:
+#
+#   LOCAL / CPU  — dataset build, weak labelling, evaluation, tests.
+#                  Everything below this header. No GPU needed.
+#   COLAB / GPU  — training and generation. Installed by the notebook itself
+#                  (CELL 2), because Unsloth resolves its own compatible
+#                  torch/transformers/trl stack. See the note at the bottom.
+#
+# Versions are the ones this pipeline was built and verified against.
+
+# --- data preparation -------------------------------------------------------
+pandas==2.2.2
+numpy==1.26.4
+pyarrow==21.0.0              # reads the med2425 parquet shards
+huggingface_hub==0.36.2      # dataset + tokenizer download (hf_hub_download)
+transformers==4.57.6         # tokenizer only, for exact token budgets (no model weights)
+
+# --- labelling: the deterministic CareerPilot ATS engine (ai-service) --------
+pydantic==2.7.4
+pydantic-settings>=2.2
+spacy==3.8.3                 # + python -m spacy download en_core_web_sm (name extraction parity)
+
+# --- evaluation ------------------------------------------------------------
+scipy==1.15.1                # Pearson / Spearman
+scikit-learn==1.6.1
+
+# --- tests -----------------------------------------------------------------
+pytest>=8.0
+
+# --- GPU (Colab) — installed by the notebook, listed here for the record ----
+# unsloth==2026.9.12   pins: trl>=0.18.2,<=0.24.0 ; transformers>=4.51.3,<=5.5.0 ;
+#                            peft>=0.18.0 ; bitsandbytes>=0.45.5 ; torch>=2.4,<2.13
+# Fallback without Unsloth (notebook CELL 2b):
+#   transformers>=4.51.3  trl>=0.24  peft>=0.18  bitsandbytes>=0.45.5  accelerate  datasets>=3.4.1,<4.4

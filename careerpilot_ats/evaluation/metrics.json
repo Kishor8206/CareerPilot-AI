@@ -1,0 +1,104 @@
+{
+  "n_test": 485,
+  "systems": {
+    "constant_train_mean": {
+      "GENERAL_ATS": {
+        "n_scored": 263,
+        "n_total": 263,
+        "teacher_fidelity": {
+          "n": 263,
+          "MAE": 7.503797377201825,
+          "RMSE": 10.30721394804242,
+          "Pearson": null,
+          "Spearman": null
+        },
+        "human_agreement": "NOT AVAILABLE \u2014 no human_ats_score has been entered in human_review.csv"
+      },
+      "JOB_MATCH_ATS": {
+        "n_scored": 222,
+        "n_total": 222,
+        "teacher_fidelity": {
+          "n": 222,
+          "MAE": 10.964313651965735,
+          "RMSE": 13.371731339108923,
+          "Pearson": null,
+          "Spearman": null
+        },
+        "external_validity": {
+          "n": 222,
+          "Spearman_vs_fit": null
+        },
+        "skill_match_vs_deterministic_reference": null,
+        "human_agreement": "NOT AVAILABLE \u2014 no human_ats_score has been entered in human_review.csv"
+      }
+    },
+    "deterministic_production": {
+      "GENERAL_ATS": {
+        "n_scored": 263,
+        "n_total": 263,
+        "teacher_fidelity": {
+          "n": 263,
+          "MAE": 5.176882129277567,
+          "RMSE": 5.973899822348252,
+          "Pearson": 0.9407387618820575,
+          "Spearman": 0.8725546338040426
+        },
+        "human_agreement": "NOT AVAILABLE \u2014 no human_ats_score has been entered in human_review.csv"
+      },
+      "JOB_MATCH_ATS": {
+        "n_scored": 199,
+        "n_total": 222,
+        "teacher_fidelity": {
+          "n": 199,
+          "MAE": 24.86472361809045,
+          "RMSE": 27.926688087521022,
+          "Pearson": 0.8225970347618234,
+          "Spearman": 0.7947960309378657
+        },
+        "external_validity": {
+          "n": 199,
+          "Spearman_vs_fit": 0.07894950968392371,
+          "p_value": 0.26767401727242907,
+          "mean_score_by_fit": {
+            "No Fit": 25.811234567901234,
+            "Potential Fit": 23.21902777777778,
+            "Good Fit": 32.45130434782609
+          }
+        },
+        "skill_match_vs_deterministic_reference": null,
+        "human_agreement": "NOT AVAILABLE \u2014 no human_ats_score has been entered in human_review.csv"
+      }
+    },
+    "deterministic_heuristic": {
+      "GENERAL_ATS": {
+        "n_scored": 0,
+        "n_total": 263,
+        "teacher_fidelity": "N/A (this system IS the weak-label teacher; comparison is circular)",
+        "human_agreement": "NOT AVAILABLE \u2014 no human_ats_score has been entered in human_review.csv"
+      },
+      "JOB_MATCH_ATS": {
+        "n_scored": 222,
+        "n_total": 222,
+        "teacher_fidelity": {
+          "n": 222,
+          "MAE": 4.047702702702702,
+          "RMSE": 5.1335972056902035,
+          "Pearson": 0.9478607438077653,
+          "Spearman": 0.9423307200872979
+        },
+        "external_validity": {
+          "n": 222,
+          "Spearman_vs_fit": 0.2268002719400567,
+          "p_value": 0.0006624989350792499,
+          "mean_score_by_fit": {
+            "No Fit": 37.63348314606741,
+            "Potential Fit": 40.6115,
+            "Good Fit": 45.35679245283018
+          }
+        },
+        "skill_match_vs_deterministic_reference": null,
+        "human_agreement": "NOT AVAILABLE \u2014 no human_ats_score has been entered in human_review.csv"
+      }
+    }
+  }
+}

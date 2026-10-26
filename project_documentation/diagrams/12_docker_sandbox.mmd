@@ -1,0 +1,29 @@
+flowchart TD
+  subgraph L0["NETWORK"]
+    b0_0["--network none no internet, no database, no internal services"]
+  end
+  subgraph L1["FILESYSTEM"]
+    b1_0["--read-only root"]
+    b1_1["tmpfs /work and /tmp only"]
+    b1_2["no volumes or bind mounts"]
+  end
+  subgraph L2["IDENTITY"]
+    b2_0["--user 65534 (nobody)"]
+    b2_1["--cap-drop ALL"]
+    b2_2["no-new-privileges"]
+  end
+  subgraph L3["RESOURCES"]
+    b3_0["--memory and --memory-swap"]
+    b3_1["--cpus"]
+    b3_2["--pids-limit (fork bombs)"]
+    b3_3["time limit inside + host deadline"]
+  end
+  subgraph L4["LIFECYCLE"]
+    b4_0["--pull never"]
+    b4_1["no -e flags: no secrets passed"]
+    b4_2["--rm plus explicit rm -f"]
+  end
+  L0 --> L1
+  L1 --> L2
+  L2 --> L3
+  L3 --> L4

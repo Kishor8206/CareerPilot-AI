@@ -1,0 +1,360 @@
+{
+  "dataset_version": "cp-ats-data-v1",
+  "label_version": "weak-v1",
+  "config": {
+    "max_seq_len": 3072,
+    "target_token_reserve": 700,
+    "jd_token_cap": 700,
+    "targets": {
+      "train": 1225,
+      "validation": 263,
+      "test": 263,
+      "human_review": 250
+    },
+    "cluster_split": {
+      "train": 0.55,
+      "validation": 0.15,
+      "test": 0.15,
+      "human_review": 0.15
+    },
+    "jd_eval_fraction": 0.35,
+    "oversample": 1.06,
+    "pairs_per_resume_cap": 3,
+    "min_resume_words": 60,
+    "min_jd_words": 30,
+    "max_resume_chars": 25000,
+    "min_alpha_ratio": 0.6,
+    "near_dup_jaccard": 0.8
+  },
+  "sources": {
+    "datasetmaster/resumes": {
+      "license": "MIT",
+      "use": "GENERAL_ATS (rendered from structured JSON)"
+    },
+    "0xnbk/resume-ats-score-v1-en": {
+      "license": "Apache-2.0",
+      "use": "JOB_MATCH_ATS + GENERAL_ATS resumes",
+      "note": "numeric ats_score DISCARDED: = class band + noise (see README)"
+    },
+    "med2425/resume-job-fit-merged-v1": {
+      "license": "NOT DECLARED on the dataset card",
+      "use": "JOB_MATCH_ATS + GENERAL_ATS resumes",
+      "note": "labels are 100% source=generated_smart (synthetic)"
+    }
+  },
+  "created": "2026-09-29 23:42:32",
+  "loaded": {
+    "resume_pool": 6238,
+    "pair_pool": 100107,
+    "by_source": {
+      "med2425/resume-job-fit-merged-v1": 93733,
+      "0xnbk/resume-ats-score-v1-en": 6374
+    }
+  },
+  "rejected": {
+    "resumes": {
+      "too_short": 34,
+      "too_long": 1
+    },
+    "pairs": {
+      "jd_too_short": 844,
+      "too_long": 71,
+      "too_short": 1
+    }
+  },
+  "dedup": {
+    "exact_resume_dups": 740,
+    "exact_pair_dups": 148,
+    "unique_resumes": 6063,
+    "near_dup_clusters": 5346,
+    "resumes_merged_as_near_dups": 717,
+    "seconds": 2.5,
+    "input_records": 105394
+  },
+  "jd_holdout": {
+    "unique_jds": 659,
+    "jd_clusters": 382,
+    "eval_jd_clusters": 134,
+    "pairs_usable": 50997,
+    "pairs_excluded_by_constraint": 48046
+  },
+  "sampling_shortfall": {
+    "train": {
+      "GENERAL_ATS": [
+        1298,
+        1298
+      ],
+      "JOB_MATCH_ATS": [
+        989,
+        1298
+      ]
+    },
+    "validation": {
+      "GENERAL_ATS": [
+        279,
+        279
+      ],
+      "JOB_MATCH_ATS": [
+        222,
+        279
+      ]
+    },
+    "test": {
+      "GENERAL_ATS": [
+        279,
+        279
+      ],
+      "JOB_MATCH_ATS": [
+        235,
+        279
+      ]
+    },
+    "human_review": {
+      "GENERAL_ATS": [
+        265,
+        265
+      ],
+      "JOB_MATCH_ATS": [
+        239,
+        265
+      ]
+    }
+  },
+  "truncation": {
+    "input_budget_tokens": 2202,
+    "resumes_truncated": 209,
+    "jds_truncated": 469
+  },
+  "labelling": {
+    "errors": 0,
+    "error_samples": [],
+    "contradictions_dropped": {
+      "0xnbk/resume-ats-score-v1-en": 56,
+      "med2425/resume-job-fit-merged-v1": 37
+    },
+    "fit_label_lambda": 0.35
+  },
+  "leakage_audit": {
+    "train|validation": {
+      "shared_resume_clusters": 0,
+      "shared_pairs": 0,
+      "shared_jd_clusters_with_train": 0
+    },
+    "train|test": {
+      "shared_resume_clusters": 0,
+      "shared_pairs": 0,
+      "shared_jd_clusters_with_train": 0
+    },
+    "train|human_review": {
+      "shared_resume_clusters": 0,
+      "shared_pairs": 0,
+      "shared_jd_clusters_with_train": 0
+    },
+    "validation|test": {
+      "shared_resume_clusters": 0,
+      "shared_pairs": 0,
+      "shared_jd_clusters_with_train": 0
+    },
+    "validation|human_review": {
+      "shared_resume_clusters": 0,
+      "shared_pairs": 0,
+      "shared_jd_clusters_with_train": 0
+    },
+    "test|human_review": {
+      "shared_resume_clusters": 0,
+      "shared_pairs": 0,
+      "shared_jd_clusters_with_train": 0
+    }
+  },
+  "jd_reuse": {
+    "test_jm_examples": 222,
+    "test_jm_whose_jd_seen_in_train": 0,
+    "note": "Resumes are cluster-disjoint. JD text can recur across splits (same posting, new applicant); reported so test metrics are read with that in mind."
+  },
+  "splits": {
+    "train": {
+      "n": 2162,
+      "mode": {
+        "GENERAL_ATS": 1225,
+        "JOB_MATCH_ATS": 937
+      },
+      "source": {
+        "datasetmaster/resumes": 1069,
+        "med2425/resume-job-fit-merged-v1": 803,
+        "0xnbk/resume-ats-score-v1-en": 290
+      },
+      "score_by_mode": {
+        "GENERAL_ATS": {
+          "count": 1225.0,
+          "mean": 69.6,
+          "std": 10.98,
+          "min": 18.7,
+          "25%": 67.05,
+          "50%": 72.39,
+          "75%": 77.01,
+          "max": 85.61
+        },
+        "JOB_MATCH_ATS": {
+          "count": 937.0,
+          "mean": 44.69,
+          "std": 13.66,
+          "min": 15.26,
+          "25%": 34.72,
+          "50%": 44.91,
+          "75%": 54.1,
+          "max": 90.62
+        }
+      },
+      "avg_resume_chars": 3520.0,
+      "avg_jd_chars": 2473.0,
+      "fit_label": {
+        "No Fit": 353,
+        "Potential Fit": 335,
+        "Good Fit": 249
+      },
+      "tokens": {
+        "mean": 1343.0,
+        "p95": 2596,
+        "max": 2763
+      }
+    },
+    "validation": {
+      "n": 470,
+      "mode": {
+        "GENERAL_ATS": 263,
+        "JOB_MATCH_ATS": 207
+      },
+      "source": {
+        "datasetmaster/resumes": 238,
+        "med2425/resume-job-fit-merged-v1": 181,
+        "0xnbk/resume-ats-score-v1-en": 51
+      },
+      "score_by_mode": {
+        "GENERAL_ATS": {
+          "count": 263.0,
+          "mean": 70.51,
+          "std": 9.83,
+          "min": 33.47,
+          "25%": 67.79,
+          "50%": 73.3,
+          "75%": 76.84,
+          "max": 85.61
+        },
+        "JOB_MATCH_ATS": {
+          "count": 207.0,
+          "mean": 43.47,
+          "std": 14.56,
+          "min": 16.91,
+          "25%": 32.24,
+          "50%": 40.12,
+          "75%": 54.33,
+          "max": 86.51
+        }
+      },
+      "avg_resume_chars": 3652.0,
+      "avg_jd_chars": 2491.0,
+      "fit_label": {
+        "No Fit": 84,
+        "Potential Fit": 73,
+        "Good Fit": 50
+      },
+      "tokens": {
+        "mean": 1376.0,
+        "p95": 2622,
+        "max": 2731
+      }
+    },
+    "test": {
+      "n": 485,
+      "mode": {
+        "GENERAL_ATS": 263,
+        "JOB_MATCH_ATS": 222
+      },
+      "source": {
+        "datasetmaster/resumes": 237,
+        "med2425/resume-job-fit-merged-v1": 185,
+        "0xnbk/resume-ats-score-v1-en": 63
+      },
+      "score_by_mode": {
+        "GENERAL_ATS": {
+          "count": 263.0,
+          "mean": 70.81,
+          "std": 10.25,
+          "min": 24.12,
+          "25%": 68.43,
+          "50%": 73.03,
+          "75%": 77.7,
+          "max": 83.13
+        },
+        "JOB_MATCH_ATS": {
+          "count": 222.0,
+          "mean": 43.4,
+          "std": 13.34,
+          "min": 17.46,
+          "25%": 32.46,
+          "50%": 41.62,
+          "75%": 52.71,
+          "max": 85.96
+        }
+      },
+      "avg_resume_chars": 3418.0,
+      "avg_jd_chars": 2357.0,
+      "fit_label": {
+        "No Fit": 89,
+        "Potential Fit": 80,
+        "Good Fit": 53
+      },
+      "tokens": {
+        "mean": 1320.0,
+        "p95": 2566,
+        "max": 2713
+      }
+    },
+    "human_review": {
+      "n": 476,
+      "mode": {
+        "GENERAL_ATS": 250,
+        "JOB_MATCH_ATS": 226
+      },
+      "source": {
+        "datasetmaster/resumes": 225,
+        "med2425/resume-job-fit-merged-v1": 203,
+        "0xnbk/resume-ats-score-v1-en": 48
+      },
+      "score_by_mode": {
+        "GENERAL_ATS": {
+          "count": 250.0,
+          "mean": 71.19,
+          "std": 9.52,
+          "min": 33.27,
+          "25%": 67.64,
+          "50%": 73.75,
+          "75%": 77.48,
+          "max": 85.03
+        },
+        "JOB_MATCH_ATS": {
+          "count": 226.0,
+          "mean": 44.9,
+          "std": 14.36,
+          "min": 18.6,
+          "25%": 34.86,
+          "50%": 42.73,
+          "75%": 53.39,
+          "max": 85.68
+        }
+      },
+      "avg_resume_chars": 3524.0,
+      "avg_jd_chars": 2424.0,
+      "fit_label": {
+        "No Fit": 85,
+        "Potential Fit": 83,
+        "Good Fit": 58
+      },
+      "tokens": {
+        "mean": 1361.0,
+        "p95": 2557,
+        "max": 2771
+      }
+    }
+  }
+}

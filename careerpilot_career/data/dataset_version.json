@@ -1,0 +1,12 @@
+{
+  "dataset_version": "career-sft-v1",
+  "preprocessing_version": "career-prep-v1",
+  "taxonomy_version": "career-knowledge-v1",
+  "created": "2026-10-07 10:53:54",
+  "counts": {
+    "train": 7157,
+    "validation": 957,
+    "test": 1802
+  },
+  "total": 9916
+}

@@ -1,0 +1,412 @@
+{
+  "modelVersion": "careerpilot-skillrec-v1",
+  "trainedAt": "2026-10-06 12:07:52",
+  "task": "next-skill prediction (leave-one-out)",
+  "selected": "itemknn",
+  "hyperparameters": {
+    "shrinkage": 5,
+    "popularity_penalty": 0.0
+  },
+  "data": {
+    "provenance": "REAL",
+    "sources": [
+      "med2425/resume-job-fit-merged-v1 (licence not declared)",
+      "0xnbk/resume-ats-score-v1-en (Apache-2.0)"
+    ],
+    "rejectedSource": "datasetmaster/resumes: skills are statistically independent (synthetic)",
+    "baskets": {
+      "train": 594,
+      "validation": 115,
+      "test": 135
+    },
+    "bySource": {
+      "train": {
+        "jd": 170,
+        "resume": 424
+      },
+      "validation": {
+        "jd": 34,
+        "resume": 81
+      },
+      "test": {
+        "jd": 43,
+        "resume": 92
+      }
+    },
+    "vocabulary": 84,
+    "minBasket": 3,
+    "minSkillTrain": 5
+  },
+  "validationSelection": [
+    {
+      "model": "popularity",
+      "hyperparameters": {},
+      "n": 1095,
+      "MRR": 0.20808252551941894,
+      "Recall@1": 0.09223744292237443,
+      "Recall@3": 0.20365296803652969,
+      "Recall@5": 0.291324200913242,
+      "Recall@10": 0.4940639269406393
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 0,
+        "popularity_penalty": 0.0
+      },
+      "n": 1095,
+      "MRR": 0.2845794622251971,
+      "Recall@1": 0.15799086757990868,
+      "Recall@3": 0.2958904109589041,
+      "Recall@5": 0.4146118721461187,
+      "Recall@10": 0.5634703196347032
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 0,
+        "popularity_penalty": 0.25
+      },
+      "n": 1095,
+      "MRR": 0.21433647085345572,
+      "Recall@1": 0.10410958904109589,
+      "Recall@3": 0.21552511415525114,
+      "Recall@5": 0.28493150684931506,
+      "Recall@10": 0.4812785388127854
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 0,
+        "popularity_penalty": 0.5
+      },
+      "n": 1095,
+      "MRR": 0.07428423135063009,
+      "Recall@1": 0.0136986301369863,
+      "Recall@3": 0.04474885844748858,
+      "Recall@5": 0.07671232876712329,
+      "Recall@10": 0.16529680365296803
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 0,
+        "popularity_penalty": 0.75
+      },
+      "n": 1095,
+      "MRR": 0.041113574848506765,
+      "Recall@1": 0.0036529680365296802,
+      "Recall@3": 0.01004566210045662,
+      "Recall@5": 0.028310502283105023,
+      "Recall@10": 0.06757990867579909
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 2,
+        "popularity_penalty": 0.0
+      },
+      "n": 1095,
+      "MRR": 0.28624637604097036,
+      "Recall@1": 0.16073059360730593,
+      "Recall@3": 0.29771689497716897,
+      "Recall@5": 0.4146118721461187,
+      "Recall@10": 0.5662100456621004
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 2,
+        "popularity_penalty": 0.25
+      },
+      "n": 1095,
+      "MRR": 0.2257242941589895,
+      "Recall@1": 0.11050228310502283,
+      "Recall@3": 0.23013698630136986,
+      "Recall@5": 0.29954337899543376,
+      "Recall@10": 0.4922374429223744
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 2,
+        "popularity_penalty": 0.5
+      },
+      "n": 1095,
+      "MRR": 0.0802850014785512,
+      "Recall@1": 0.01643835616438356,
+      "Recall@3": 0.047488584474885846,
+      "Recall@5": 0.08401826484018265,
+      "Recall@10": 0.1863013698630137
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 2,
+        "popularity_penalty": 0.75
+      },
+      "n": 1095,
+      "MRR": 0.04343783815429558,
+      "Recall@1": 0.006392694063926941,
+      "Recall@3": 0.011872146118721462,
+      "Recall@5": 0.031050228310502283,
+      "Recall@10": 0.0684931506849315
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 5,
+        "popularity_penalty": 0.0
+      },
+      "n": 1095,
+      "MRR": 0.2863192210982315,
+      "Recall@1": 0.16164383561643836,
+      "Recall@3": 0.2958904109589041,
+      "Recall@5": 0.41278538812785387,
+      "Recall@10": 0.5662100456621004
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 5,
+        "popularity_penalty": 0.25
+      },
+      "n": 1095,
+      "MRR": 0.23484234709338106,
+      "Recall@1": 0.11232876712328767,
+      "Recall@3": 0.25388127853881276,
+      "Recall@5": 0.32511415525114157,
+      "Recall@10": 0.502283105022831
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 5,
+        "popularity_penalty": 0.5
+      },
+      "n": 1095,
+      "MRR": 0.08946165149553284,
+      "Recall@1": 0.021917808219178082,
+      "Recall@3": 0.057534246575342465,
+      "Recall@5": 0.09406392694063927,
+      "Recall@10": 0.21095890410958903
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 5,
+        "popularity_penalty": 0.75
+      },
+      "n": 1095,
+      "MRR": 0.04518816071736234,
+      "Recall@1": 0.0073059360730593605,
+      "Recall@3": 0.014611872146118721,
+      "Recall@5": 0.030136986301369864,
+      "Recall@10": 0.0776255707762557
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 10,
+        "popularity_penalty": 0.0
+      },
+      "n": 1095,
+      "MRR": 0.280374455682328,
+      "Recall@1": 0.1506849315068493,
+      "Recall@3": 0.2968036529680365,
+      "Recall@5": 0.4136986301369863,
+      "Recall@10": 0.5643835616438356
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 10,
+        "popularity_penalty": 0.25
+      },
+      "n": 1095,
+      "MRR": 0.2528806858696361,
+      "Recall@1": 0.1324200913242009,
+      "Recall@3": 0.2602739726027397,
+      "Recall@5": 0.36164383561643837,
+      "Recall@10": 0.5251141552511416
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 10,
+        "popularity_penalty": 0.5
+      },
+      "n": 1095,
+      "MRR": 0.10063388096889263,
+      "Recall@1": 0.0228310502283105,
+      "Recall@3": 0.0776255707762557,
+      "Recall@5": 0.1178082191780822,
+      "Recall@10": 0.2420091324200913
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 10,
+        "popularity_penalty": 0.75
+      },
+      "n": 1095,
+      "MRR": 0.04789289906906035,
+      "Recall@1": 0.00821917808219178,
+      "Recall@3": 0.0182648401826484,
+      "Recall@5": 0.033789954337899546,
+      "Recall@10": 0.08584474885844749
+    },
+    {
+      "model": "ppmi_svd",
+      "hyperparameters": {
+        "dim": 8
+      },
+      "n": 1095,
+      "MRR": 0.17266075614533843,
+      "Recall@1": 0.07853881278538813,
+      "Recall@3": 0.16164383561643836,
+      "Recall@5": 0.24383561643835616,
+      "Recall@10": 0.3744292237442922
+    },
+    {
+      "model": "ppmi_svd",
+      "hyperparameters": {
+        "dim": 16
+      },
+      "n": 1095,
+      "MRR": 0.19443197332740614,
+      "Recall@1": 0.0958904109589041,
+      "Recall@3": 0.19726027397260273,
+      "Recall@5": 0.26118721461187216,
+      "Recall@10": 0.40821917808219177
+    },
+    {
+      "model": "ppmi_svd",
+      "hyperparameters": {
+        "dim": 24
+      },
+      "n": 1095,
+      "MRR": 0.21431972651479073,
+      "Recall@1": 0.11689497716894977,
+      "Recall@3": 0.2146118721461187,
+      "Recall@5": 0.29315068493150687,
+      "Recall@10": 0.4063926940639269
+    },
+    {
+      "model": "ppmi_svd",
+      "hyperparameters": {
+        "dim": 32
+      },
+      "n": 1095,
+      "MRR": 0.22994469566196604,
+      "Recall@1": 0.12511415525114156,
+      "Recall@3": 0.2365296803652968,
+      "Recall@5": 0.3141552511415525,
+      "Recall@10": 0.4438356164383562
+    }
+  ],
+  "test": [
+    {
+      "model": "popularity",
+      "hyperparameters": {},
+      "n": 1473,
+      "MRR": 0.19463738668511163,
+      "Recall@1": 0.08214528173794976,
+      "Recall@3": 0.1894093686354379,
+      "Recall@5": 0.2722335369993211,
+      "Recall@10": 0.47589952477936187,
+      "by_source": {
+        "jd": {
+          "n": 392,
+          "MRR": 0.20266770336801088,
+          "Recall@1": 0.10714285714285714,
+          "Recall@3": 0.1836734693877551,
+          "Recall@5": 0.24489795918367346,
+          "Recall@10": 0.4387755102040816
+        },
+        "resume": {
+          "n": 1081,
+          "MRR": 0.19172537545505017,
+          "Recall@1": 0.0730804810360777,
+          "Recall@3": 0.19148936170212766,
+          "Recall@5": 0.2821461609620722,
+          "Recall@10": 0.48936170212765956
+        }
+      }
+    },
+    {
+      "model": "itemknn",
+      "hyperparameters": {
+        "shrinkage": 5,
+        "popularity_penalty": 0.0
+      },
+      "n": 1473,
+      "MRR": 0.3129013809156356,
+      "Recall@1": 0.19144602851323828,
+      "Recall@3": 0.3319755600814664,
+      "Recall@5": 0.4107264086897488,
+      "Recall@10": 0.5845213849287169,
+      "by_source": {
+        "jd": {
+          "n": 392,
+          "MRR": 0.31132978746139406,
+          "Recall@1": 0.21428571428571427,
+          "Recall@3": 0.30357142857142855,
+          "Recall@5": 0.36989795918367346,
+          "Recall@10": 0.548469387755102
+        },
+        "resume": {
+          "n": 1081,
+          "MRR": 0.3134712834448333,
+          "Recall@1": 0.18316373728029603,
+          "Recall@3": 0.3422756706753006,
+          "Recall@5": 0.425531914893617,
+          "Recall@10": 0.5975948196114709
+        }
+      }
+    },
+    {
+      "model": "ppmi_svd",
+      "hyperparameters": {
+        "dim": 32
+      },
+      "n": 1473,
+      "MRR": 0.23762363310353146,
+      "Recall@1": 0.11880515953835709,
+      "Recall@3": 0.25797691785471827,
+      "Recall@5": 0.34826883910386963,
+      "Recall@10": 0.48336727766463,
+      "by_source": {
+        "jd": {
+          "n": 392,
+          "MRR": 0.21866172437897444,
+          "Recall@1": 0.11224489795918367,
+          "Recall@3": 0.20918367346938777,
+          "Recall@5": 0.3010204081632653,
+          "Recall@10": 0.4336734693877551
+        },
+        "resume": {
+          "n": 1081,
+          "MRR": 0.24449973691484164,
+          "Recall@1": 0.1211840888066605,
+          "Recall@3": 0.27567067530064754,
+          "Recall@5": 0.3654024051803885,
+          "Recall@10": 0.5013876040703052
+        }
+      }
+    }
+  ],
+  "gainOverPopularity": {
+    "metric": "Recall@5 difference",
+    "point": 0.1384928716904277,
+    "ci95": [
+      0.10085569194292641,
+      0.17578136368597205
+    ],
+    "baskets": 135,
+    "rounds": 2000
+  },
+  "randomRecallAt5": 0.060240963855421686,
+  "seed": 42,
+  "note": "The saved model is the one evaluated on the test split (fitted on training baskets only)."
+}

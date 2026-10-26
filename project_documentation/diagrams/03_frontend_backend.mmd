@@ -1,0 +1,24 @@
+flowchart TD
+  subgraph L0["BROWSER"]
+    b0_0["Page component"]
+    b0_1["TanStack Query hook"]
+    b0_2["axios client (access token header)"]
+  end
+  subgraph L1["EXPRESS"]
+    b1_0["authenticate -> authorize(role)"]
+    b1_1["validate (Zod)"]
+    b1_2["controller -> service"]
+  end
+  subgraph L2["NODE SERVICE"]
+    b2_0["Mongoose models"]
+    b2_1["aiClient (internal key, retries)"]
+    b2_2["audit + notifications"]
+  end
+  subgraph L3["FASTAPI"]
+    b3_0["route"]
+    b3_1["BaseAgent.run(): validate in -> handle -> validate out"]
+    b3_2["deterministic engine (+ optional LLM)"]
+  end
+  L0 --> L1
+  L1 --> L2
+  L2 --> L3

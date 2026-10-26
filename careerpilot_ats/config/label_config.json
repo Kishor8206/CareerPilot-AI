@@ -1,0 +1,25 @@
+{
+  "label_version": "weak-v1",
+  "fit_label_lambda": 0.35,
+  "general_weights": {
+    "structure": 0.15,
+    "sectionCompleteness": 0.1,
+    "skills": 0.15,
+    "experience": 0.15,
+    "projects": 0.15,
+    "achievements": 0.1,
+    "keywords": 0.1,
+    "formatting": 0.1
+  },
+  "job_match_weights": {
+    "requiredSkillMatch": 0.3,
+    "experienceRelevance": 0.2,
+    "projectRelevance": 0.15,
+    "keywordCoverage": 0.15,
+    "educationEligibility": 0.1,
+    "structure": 0.05,
+    "formatting": 0.05
+  },
+  "formulas": "see ats_pipeline/labels.py docstrings (general_components, job_match_components)",
+  "labels_are": "WEAK LABELS - not ground truth"
+}

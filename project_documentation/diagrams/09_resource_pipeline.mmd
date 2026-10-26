@@ -1,0 +1,14 @@
+flowchart TD
+  n0["Skill gap (skill, stage, priority)"]
+  n1["Catalogue lookup by skill (270 resources)"]
+  n2["Rank: base 3.0 + 2.0 stage match + type preference + quality weight"]
+  n3["Only verified / reachable resources are eligible"]
+  n4["Model (if enabled) may choose resource IDs only"]
+  n5["ID resolution: unknown IDs are dropped and counted"]
+  n6["Per skill: reading resources + YouTube videos"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6

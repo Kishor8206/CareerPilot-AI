@@ -1,0 +1,47 @@
+{
+  "name": "careerpilot-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CareerPilot AI - Agentic AI-Based Placement Preparation and Career Intelligence Platform",
+  "workspaces": [
+    "shared",
+    "database",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:ai",
+    "install:ai": "python -m pip install -r ai-service/requirements.txt",
+    "dev": "concurrently -n \"backend,frontend,ai\" -c \"cyan,magenta,yellow\" \"npm:dev:backend\" \"npm:dev:frontend\" \"npm:dev:ai\"",
+    "dev:backend": "npm run dev --workspace backend",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:ai": "python -m uvicorn app.main:app --reload --port 8000 --app-dir ai-service",
+    "build": "npm run build --workspace shared && npm run build --workspace backend && npm run build --workspace frontend",
+    "build:backend": "npm run build --workspace backend",
+    "build:frontend": "npm run build --workspace frontend",
+    "typecheck": "npm run typecheck --workspace backend && npm run typecheck --workspace frontend",
+    "test": "npm run test --workspace backend",
+    "test:frontend": "npm run test --workspace frontend",
+    "test:ai": "python -m pytest ai-service/tests -q",
+    "test:all": "npm run test && npm run test:frontend && npm run test:ai",
+    "test:e2e": "npm run e2e --workspace backend",
+    "seed": "npm run seed --workspace backend",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "seed:dsa": "npm run seed:dsa --workspace backend",
+    "judge:build": "docker build -t careerpilot-judge:1 judge",
+    "judge:verify": "npm run judge:verify --workspace backend"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^15.15.0",
+    "typescript-eslint": "^8.68.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

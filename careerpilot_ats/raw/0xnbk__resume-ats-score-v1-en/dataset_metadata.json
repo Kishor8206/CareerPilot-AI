@@ -1,0 +1,47 @@
+{
+  "dataset_name": "resume-ats-score-v1-en",
+  "version": "1.0.0",
+  "description": "Semantic similarity training dataset for fine-tuning sentence transformers to predict ATS (Applicant Tracking System) compatibility scores between resumes and job descriptions",
+  "total_examples": 6374,
+  "train_examples": 5099,
+  "validation_examples": 1275,
+  "task": "sentence_similarity",
+  "format": "text_pairs_with_scores",
+  "input_format": "resume [SEP] job_description",
+  "score_range": {
+    "min": 18.28,
+    "max": 90.68,
+    "mean": 47.19,
+    "median": 29.9
+  },
+  "label_categories": {
+    "No Fit": "ATS score < 40 (poor match)",
+    "Potential Fit": "ATS score 40-70 (moderate match)",
+    "Good Fit": "ATS score > 70 (strong match)"
+  },
+  "label_distribution": {
+    "No Fit": 3457,
+    "Potential Fit": 1716,
+    "Good Fit": 1692
+  },
+  "training_objective": "CosineSimilarityLoss for learning semantic alignment between resumes and job requirements",
+  "use_case": "Fine-tuning sentence transformers for ATS score prediction and resume-job matching",
+  "source": "Derived from Resume-Job Description Fit dataset (cnamuangtoun/resume-job-description-fit)",
+  "source_url": "https://huggingface.co/datasets/cnamuangtoun/resume-job-description-fit",
+  "generation_method": "Paired resume-job descriptions with calculated ATS compatibility scores based on semantic similarity",
+  "generation_date": "2025-10-13",
+  "language": "en",
+  "license": "Apache-2.0",
+  "intended_use": "Training sentence transformers for semantic similarity and ATS score prediction",
+  "model_trained": "nbk-ats-semantic-v1-en",
+  "preprocessing": "Text cleaned and normalized, duplicates removed, combined in sentence pair format with similarity scores",
+  "quality_metrics": {
+    "empty_texts": 0,
+    "duplicates_removed": 2,
+    "overall_quality_score": 90.45
+  },
+  "split_ratio": {
+    "train": 0.8,
+    "validation": 0.2
+  }
+}

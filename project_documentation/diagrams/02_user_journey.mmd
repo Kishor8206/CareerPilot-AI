@@ -1,0 +1,20 @@
+flowchart TD
+  n0["Register / log in  (JWT + refresh token)"]
+  n1["Complete profile, choose target companies and roles"]
+  n2["Upload resume  ->  parsing + ATS score (rule-based)"]
+  n3["Compare with a job description (predefined or your own)"]
+  n4["Job matching: coverage, eligibility, match score"]
+  n5["Assessments  |  DSA practice  |  AI mock interview"]
+  n6["APIE recomputes the Placement Readiness Score after every activity"]
+  n7["Career Plan: skill gaps -> phased plan -> schedule -> resources"]
+  n8["Alumni mentorship: live mock interview + human feedback"]
+  n9["Reports (PDF) and progress tracking"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6
+  n6 --> n7
+  n7 --> n8
+  n8 --> n9

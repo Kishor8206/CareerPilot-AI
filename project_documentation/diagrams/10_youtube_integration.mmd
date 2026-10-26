@@ -1,0 +1,14 @@
+flowchart TD
+  n0["Build time: fetch_youtube_resources.py (needs YOUTUBE_API_KEY)"]
+  n1["YouTube Data API v3 search per skill"]
+  n2["Keep videos that are public and embeddable"]
+  n3["180 videos stored in the catalogue with IDs"]
+  n4["Runtime: GET /ai/career/resources/youtube (live search)"]
+  n5["Live results are labelled 'unverified', never added to the catalogue"]
+  n6["Key lives only in .env; packaging script scans for leaked keys"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6

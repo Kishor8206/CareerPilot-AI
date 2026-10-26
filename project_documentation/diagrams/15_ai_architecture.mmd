@@ -1,0 +1,11 @@
+flowchart TD
+  top["CareerPilot AI service"]
+  top --> c0h["RESUME / ATS"] --> c0_0["Parser + taxonomy (deterministic)"] --> c0_1["9-criterion ATS score (deterministic)"] --> c0_2["Qwen3-4B QLoRA (optional, not trained)"]
+  c0_2 --> bottom
+  top --> c1h["READINESS"] --> c1_0["APIE weighted model (deterministic)"] --> c1_1["Random Forest (trained, synthetic data)"] --> c1_2["Skill gaps + recommendations"]
+  c1_2 --> bottom
+  top --> c2h["INTERVIEW / RAG"] --> c2_0["LLM: questions + 5-dimension scores"] --> c2_1["Overall score recomputed in code"] --> c2_2["RAG with relevance threshold"]
+  c2_2 --> bottom
+  top --> c3h["CAREER PLAN"] --> c3_0["Skill-gap + planner (deterministic)"] --> c3_1["Qwen3-1.7B QLoRA (v1 not usable, off)"] --> c3_2["Resource catalogue + YouTube API"]
+  c3_2 --> bottom
+  bottom["Validation layer: Pydantic schemas, grounding checks, fallback"]

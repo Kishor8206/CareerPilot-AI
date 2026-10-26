@@ -1,0 +1,18 @@
+{
+  "name": "@careerpilot/database",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CareerPilot AI - demo seed datasets (§40). Every record is tagged provenance=DEMO.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

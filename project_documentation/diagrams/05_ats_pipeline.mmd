@@ -1,0 +1,22 @@
+flowchart TD
+  n0["Resume file (PDF / DOCX / TXT, max 5 MB)"]
+  n1["Upload checks: extension + MIME + magic bytes, SHA-256 dedup"]
+  n2["Text extraction (PyMuPDF, python-docx) + cleaning"]
+  n3["Section detection (heading patterns)"]
+  n4["Field extraction: regex + spaCy NER for the name"]
+  n5["Skill extraction: 107-skill taxonomy, 181 aliases"]
+  n6["ATS score: 9 capped rule-based criteria, total 100"]
+  n7["JD keyword match: matched / missing / coverage"]
+  n8["OPTIONAL fine-tuned Qwen3-4B (off; not trained yet)"]
+  n9["Validation + grounding guard; score recomputed in Python"]
+  n10["Strengths, weaknesses, recommendations -> stored analysis"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6
+  n6 --> n7
+  n7 --> n8
+  n8 --> n9
+  n9 --> n10

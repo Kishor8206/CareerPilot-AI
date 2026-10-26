@@ -1,0 +1,9 @@
+flowchart TD
+  top["One transformer weight matrix W (d x k)"]
+  top --> c0h["Full fine-tuning"] --> c0_0["Update all of W"] --> c0_1["Billions of trainable parameters"] --> c0_2["Needs large GPU memory"]
+  c0_2 --> bottom
+  top --> c1h["LoRA"] --> c1_0["W frozen (16-bit)"] --> c1_1["Train A (r x k) and B (d x r) W' = W + (alpha/r) B A"] --> c1_2["About 1% trainable"]
+  c1_2 --> bottom
+  top --> c2h["QLoRA (used here)"] --> c2_0["W frozen AND stored in 4-bit NF4"] --> c2_1["Same A, B adapters, r = 16, alpha = 32"] --> c2_2["Fits a free 16 GB T4"]
+  c2_2 --> bottom
+  bottom["Output: a small adapter file; the base model is unchanged"]

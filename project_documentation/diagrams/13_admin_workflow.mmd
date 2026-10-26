@@ -1,0 +1,16 @@
+flowchart TD
+  n0["Log in as ADMIN or PLACEMENT_OFFICER (role enforced server-side)"]
+  n1["Admin dashboard: users, system health, AI usage per agent"]
+  n2["Manage users, companies, job roles and job descriptions"]
+  n3["Verify or reject alumni accounts"]
+  n4["Configure APIE weights and bands (validated to sum to 1.0)"]
+  n5["Knowledge base: ingest documents, re-index, test RAG queries"]
+  n6["Placement officer: cohort analytics, at-risk students, reports"]
+  n7["Audit log of sensitive actions; research export (pseudonymised)"]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6
+  n6 --> n7

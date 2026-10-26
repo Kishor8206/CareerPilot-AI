@@ -1,0 +1,42 @@
+flowchart TD
+  subgraph L0["IDENTITY"]
+    b0_0["User"]
+    b0_1["RefreshToken"]
+    b0_2["AuditLog"]
+    b0_3["Notification"]
+  end
+  subgraph L1["PROFILES (1:1 with User)"]
+    b1_0["StudentProfile"]
+    b1_1["AlumniProfile"]
+    b1_2["PlacementOfficer"]
+  end
+  subgraph L2["STUDENT WORK (many per student)"]
+    b2_0["Resume -> ResumeAnalysis"]
+    b2_1["AssessmentAttempt"]
+    b2_2["InterviewSession -> Question / Response / Evaluation"]
+    b2_3["CodingSubmission"]
+    b2_4["CareerPlan"]
+  end
+  subgraph L3["DERIVED"]
+    b3_0["PlacementReadiness (append-only snapshots)"]
+    b3_1["SkillGap"]
+    b3_2["Recommendation"]
+    b3_3["AIInteraction"]
+  end
+  subgraph L4["CATALOGUE"]
+    b4_0["Company -> JobRole -> JobDescription"]
+    b4_1["Assessment -> AssessmentQuestion"]
+    b4_2["CodingProblem"]
+    b4_3["Skill, RAGDocument, SystemConfiguration"]
+  end
+  subgraph L5["MENTORSHIP"]
+    b5_0["MentorshipRequest"]
+    b5_1["MentorshipSession"]
+    b5_2["AlumniFeedback"]
+    b5_3["MonitoringEvent"]
+  end
+  L0 --> L1
+  L1 --> L2
+  L2 --> L3
+  L3 --> L4
+  L4 --> L5

@@ -1,0 +1,38 @@
+flowchart TD
+  subgraph L0["TRANSPORT / HEADERS"]
+    b0_0["Helmet security headers"]
+    b0_1["CORS allow-list"]
+    b0_2["signed httpOnly refresh cookie"]
+  end
+  subgraph L1["IDENTITY"]
+    b1_0["bcrypt password hashing (12 rounds)"]
+    b1_1["JWT access 15 min, refresh 7 days"]
+    b1_2["refresh rotation + family revocation"]
+    b1_3["RBAC: 4 active roles"]
+  end
+  subgraph L2["INPUT"]
+    b2_0["Zod schemas on body / query / params"]
+    b2_1["sanitisation against NoSQL operators"]
+    b2_2["upload: extension + MIME + magic bytes + size"]
+  end
+  subgraph L3["ABUSE"]
+    b3_0["global, auth, AI, upload and code-run rate limiters"]
+    b3_1["sandbox concurrency cap"]
+    b3_2["audit log"]
+  end
+  subgraph L4["AI"]
+    b4_0["schema-validated outputs"]
+    b4_1["scores recomputed in code"]
+    b4_2["RAG relevance threshold"]
+    b4_3["resource IDs only + SSRF-guarded verifier"]
+  end
+  subgraph L5["CODE EXECUTION"]
+    b5_0["isolated container per run"]
+    b5_1["hidden tests and expected outputs stay on the host"]
+    b5_2["never executed on the API host"]
+  end
+  L0 --> L1
+  L1 --> L2
+  L2 --> L3
+  L3 --> L4
+  L4 --> L5

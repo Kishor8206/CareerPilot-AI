@@ -1,0 +1,4901 @@
+{
+  "knowledge_version": "career-knowledge-v1",
+  "roles": [
+    {
+      "role_id": "software_engineer",
+      "canonical_name": "Software Engineer",
+      "onet_soc": "15-1252.00",
+      "aliases": [
+        "software developer",
+        "sde",
+        "software development engineer",
+        "programmer"
+      ],
+      "description": "Designs, builds and maintains software, with strong fundamentals in data structures, algorithms and system design.",
+      "core_skills": [
+        {
+          "skill": "Programming Fundamentals",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Algorithms",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Object Oriented Programming",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "DSA Problem Solving",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "DBMS",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Operating Systems",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Computer Networks",
+          "required_level": "beginner",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "REST API",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "System Design",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Software Testing",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Linux",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 1
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving",
+        "Teamwork"
+      ],
+      "typical_projects": [
+        {
+          "title": "Command-line task manager",
+          "skills": [
+            "Programming Fundamentals",
+            "Object Oriented Programming",
+            "Git"
+          ],
+          "difficulty": "beginner",
+          "description": "A CLI app with persistent storage and unit tests."
+        },
+        {
+          "title": "REST API with a relational database",
+          "skills": [
+            "REST API",
+            "SQL",
+            "DBMS",
+            "Git"
+          ],
+          "difficulty": "intermediate",
+          "description": "A documented CRUD service with validation and tests."
+        },
+        {
+          "title": "URL shortener with caching",
+          "skills": [
+            "System Design",
+            "REST API",
+            "SQL",
+            "Data Structures"
+          ],
+          "difficulty": "advanced",
+          "description": "A service designed for scale, with a written design document."
+        }
+      ],
+      "interview_topics": [
+        "Arrays, strings and hashing",
+        "Linked lists, stacks and queues",
+        "Trees and graphs",
+        "Sorting, searching and recursion",
+        "Dynamic programming basics",
+        "OOP principles and design",
+        "SQL queries and joins",
+        "OS and networking fundamentals"
+      ],
+      "related_roles": [
+        "Backend Developer",
+        "Full Stack Developer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "TOOL",
+        "DATABASE",
+        "BACKEND",
+        "DEVOPS"
+      ],
+      "onet_title": "Software Developers",
+      "esco_occupation": "software developer",
+      "tools": [
+        "Git",
+        "Linux"
+      ],
+      "technologies": [
+        "SQL",
+        "REST API",
+        "Docker"
+      ],
+      "knowledge_areas": [
+        "Programming Fundamentals",
+        "Data Structures",
+        "Algorithms",
+        "Object Oriented Programming",
+        "DSA Problem Solving",
+        "DBMS",
+        "Operating Systems",
+        "Computer Networks",
+        "System Design",
+        "Software Testing"
+      ],
+      "prerequisites": [
+        "HTTP & Web Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "Programming Fundamentals",
+        "SQL",
+        "DBMS",
+        "Data Structures",
+        "Docker",
+        "Object Oriented Programming",
+        "Operating Systems",
+        "REST API",
+        "Software Testing",
+        "Algorithms",
+        "System Design",
+        "DSA Problem Solving"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Programming Fundamentals": [],
+        "Data Structures": [
+          "jobs"
+        ],
+        "Algorithms": [
+          "jobs"
+        ],
+        "Object Oriented Programming": [
+          "esco",
+          "jobs"
+        ],
+        "DSA Problem Solving": [],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "DBMS": [],
+        "Operating Systems": [
+          "jobs"
+        ],
+        "Computer Networks": [
+          "onet",
+          "jobs"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "System Design": [
+          "jobs"
+        ],
+        "Software Testing": [
+          "jobs"
+        ],
+        "Linux": [
+          "onet",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 15,
+        "externally_corroborated": 12
+      }
+    },
+    {
+      "role_id": "frontend_developer",
+      "canonical_name": "Frontend Developer",
+      "onet_soc": "15-1254.00",
+      "aliases": [
+        "front end developer",
+        "front-end developer",
+        "ui developer",
+        "react developer",
+        "web developer"
+      ],
+      "description": "Builds the user-facing part of web applications: accessible, responsive, fast interfaces.",
+      "core_skills": [
+        {
+          "skill": "HTML",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "CSS",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "JavaScript",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "React",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Responsive Design",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "TypeScript",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "REST API",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "beginner",
+          "importance": 4
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Redux",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Next.js",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Jest",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Tailwind CSS",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Figma",
+          "required_level": "beginner",
+          "importance": 1
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Teamwork"
+      ],
+      "typical_projects": [
+        {
+          "title": "Responsive portfolio site",
+          "skills": [
+            "HTML",
+            "CSS",
+            "Responsive Design",
+            "Git"
+          ],
+          "difficulty": "beginner",
+          "description": "A multi-page responsive site deployed publicly."
+        },
+        {
+          "title": "Task board with React",
+          "skills": [
+            "React",
+            "JavaScript",
+            "CSS",
+            "REST API"
+          ],
+          "difficulty": "intermediate",
+          "description": "A stateful app with routing and API integration."
+        },
+        {
+          "title": "E-commerce storefront",
+          "skills": [
+            "React",
+            "TypeScript",
+            "Redux",
+            "Jest",
+            "REST API"
+          ],
+          "difficulty": "advanced",
+          "description": "Typed, tested storefront with cart and checkout flows."
+        }
+      ],
+      "interview_topics": [
+        "JavaScript closures, scope and the event loop",
+        "DOM, events and browser rendering",
+        "CSS layout: flexbox and grid",
+        "React components, hooks and state",
+        "Asynchronous JavaScript and fetch",
+        "Web performance and accessibility",
+        "Basic DSA in JavaScript"
+      ],
+      "related_roles": [
+        "Full Stack Developer",
+        "Mobile Developer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "FRONTEND",
+        "TOOL",
+        "BACKEND"
+      ],
+      "onet_title": "Web Developers",
+      "esco_occupation": "user interface developer",
+      "tools": [
+        "Git",
+        "Figma"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Responsive Design",
+        "TypeScript",
+        "REST API",
+        "Redux",
+        "Next.js",
+        "Jest",
+        "Tailwind CSS"
+      ],
+      "knowledge_areas": [
+        "Data Structures"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "HTTP & Web Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Figma",
+        "Git",
+        "HTML",
+        "HTTP & Web Fundamentals",
+        "Programming Fundamentals",
+        "CSS",
+        "Data Structures",
+        "JavaScript",
+        "REST API",
+        "Jest",
+        "React",
+        "Responsive Design",
+        "Tailwind CSS",
+        "TypeScript",
+        "Next.js",
+        "Redux"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "HTML": [
+          "onet",
+          "jobs"
+        ],
+        "CSS": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "JavaScript": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "React": [
+          "onet",
+          "jobs"
+        ],
+        "Responsive Design": [],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "TypeScript": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "Data Structures": [
+          "jobs"
+        ],
+        "Redux": [
+          "onet"
+        ],
+        "Next.js": [],
+        "Jest": [
+          "onet"
+        ],
+        "Tailwind CSS": [],
+        "Figma": [
+          "onet"
+        ]
+      },
+      "corroboration": {
+        "requirements": 14,
+        "externally_corroborated": 11
+      }
+    },
+    {
+      "role_id": "backend_developer",
+      "canonical_name": "Backend Developer",
+      "onet_soc": "15-1252.00",
+      "aliases": [
+        "back end developer",
+        "back-end developer",
+        "server-side developer",
+        "api developer"
+      ],
+      "description": "Builds server-side logic, APIs and data storage that applications depend on.",
+      "core_skills": [
+        {
+          "skill": "Programming Fundamentals",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "REST API",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "DBMS",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Authentication & Authorization",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Database Design",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Object Oriented Programming",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Redis",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "System Design",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Software Testing",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Linux",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Algorithms",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Microservices",
+          "required_level": "beginner",
+          "importance": 1
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Notes API",
+          "skills": [
+            "REST API",
+            "SQL",
+            "Git"
+          ],
+          "difficulty": "beginner",
+          "description": "A CRUD API with validation and a relational database."
+        },
+        {
+          "title": "Authenticated blogging backend",
+          "skills": [
+            "REST API",
+            "Authentication & Authorization",
+            "Database Design",
+            "Software Testing"
+          ],
+          "difficulty": "intermediate",
+          "description": "Role-based access, pagination and an automated test suite."
+        },
+        {
+          "title": "Order-processing service",
+          "skills": [
+            "Microservices",
+            "Docker",
+            "Redis",
+            "System Design"
+          ],
+          "difficulty": "advanced",
+          "description": "Containerised services with caching and a design document."
+        }
+      ],
+      "interview_topics": [
+        "REST design and HTTP semantics",
+        "SQL joins, indexes and transactions",
+        "Authentication, sessions and JWT",
+        "Caching and rate limiting",
+        "Concurrency and scalability basics",
+        "Data structures and algorithms",
+        "Schema design and normalisation"
+      ],
+      "related_roles": [
+        "Software Engineer",
+        "Full Stack Developer",
+        "DevOps Engineer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "TOOL",
+        "DATABASE",
+        "BACKEND",
+        "DEVOPS"
+      ],
+      "onet_title": "Software Developers",
+      "esco_occupation": "software developer",
+      "tools": [
+        "Git",
+        "Linux"
+      ],
+      "technologies": [
+        "REST API",
+        "SQL",
+        "Authentication & Authorization",
+        "Database Design",
+        "Docker",
+        "Redis",
+        "Microservices"
+      ],
+      "knowledge_areas": [
+        "Programming Fundamentals",
+        "DBMS",
+        "Data Structures",
+        "Object Oriented Programming",
+        "System Design",
+        "Software Testing",
+        "Algorithms"
+      ],
+      "prerequisites": [
+        "HTTP & Web Fundamentals",
+        "Computer Networks"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "Programming Fundamentals",
+        "Redis",
+        "SQL",
+        "DBMS",
+        "Data Structures",
+        "Database Design",
+        "Docker",
+        "Object Oriented Programming",
+        "REST API",
+        "Software Testing",
+        "Algorithms",
+        "Authentication & Authorization",
+        "Microservices",
+        "System Design"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Programming Fundamentals": [],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "DBMS": [],
+        "Authentication & Authorization": [],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Data Structures": [
+          "jobs"
+        ],
+        "Database Design": [],
+        "Object Oriented Programming": [
+          "esco",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "Redis": [
+          "onet"
+        ],
+        "System Design": [
+          "jobs"
+        ],
+        "Software Testing": [
+          "jobs"
+        ],
+        "Linux": [
+          "onet",
+          "jobs"
+        ],
+        "Algorithms": [
+          "jobs"
+        ],
+        "Microservices": [
+          "onet",
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 16,
+        "externally_corroborated": 12
+      }
+    },
+    {
+      "role_id": "full_stack_developer",
+      "canonical_name": "Full Stack Developer",
+      "onet_soc": "15-1254.00",
+      "aliases": [
+        "fullstack developer",
+        "full-stack developer",
+        "full stack engineer",
+        "web application developer"
+      ],
+      "description": "Builds complete web applications across the browser, the server and the database.",
+      "core_skills": [
+        {
+          "skill": "HTML",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "CSS",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "JavaScript",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "React",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Node.js",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "REST API",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Authentication & Authorization",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Database Design",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "intermediate",
+          "importance": 4
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Express.js",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "MongoDB",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "TypeScript",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Algorithms",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Software Testing",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Responsive Design",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "System Design",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Personal portfolio with a contact API",
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js"
+          ],
+          "difficulty": "beginner",
+          "description": "A static front end with a small backend endpoint."
+        },
+        {
+          "title": "Full-stack task manager",
+          "skills": [
+            "React",
+            "Node.js",
+            "REST API",
+            "SQL",
+            "Authentication & Authorization"
+          ],
+          "difficulty": "intermediate",
+          "description": "Login, CRUD and a deployed database-backed app."
+        },
+        {
+          "title": "Marketplace application",
+          "skills": [
+            "React",
+            "Node.js",
+            "Database Design",
+            "Docker",
+            "Software Testing"
+          ],
+          "difficulty": "advanced",
+          "description": "Multi-role app with payments mocked, tests and containerised deployment."
+        }
+      ],
+      "interview_topics": [
+        "JavaScript fundamentals and async",
+        "React components, hooks and state",
+        "REST API design",
+        "SQL and schema design",
+        "Authentication and security basics",
+        "Data structures and algorithms",
+        "Deployment and environment configuration"
+      ],
+      "related_roles": [
+        "Frontend Developer",
+        "Backend Developer",
+        "MERN Developer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "FRONTEND",
+        "TOOL",
+        "BACKEND",
+        "DATABASE",
+        "DEVOPS"
+      ],
+      "onet_title": "Web Developers",
+      "esco_occupation": "web developer",
+      "tools": [
+        "Git"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "REST API",
+        "SQL",
+        "Authentication & Authorization",
+        "Database Design",
+        "Express.js",
+        "MongoDB",
+        "TypeScript",
+        "Docker",
+        "Responsive Design"
+      ],
+      "knowledge_areas": [
+        "Data Structures",
+        "Algorithms",
+        "Software Testing",
+        "System Design"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "Linux",
+        "HTTP & Web Fundamentals",
+        "DBMS",
+        "Computer Networks"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "Git",
+        "HTML",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "MongoDB",
+        "Programming Fundamentals",
+        "SQL",
+        "CSS",
+        "DBMS",
+        "Data Structures",
+        "Database Design",
+        "Docker",
+        "JavaScript",
+        "REST API",
+        "Software Testing",
+        "Algorithms",
+        "Authentication & Authorization",
+        "Node.js",
+        "React",
+        "Responsive Design",
+        "System Design",
+        "TypeScript",
+        "Express.js"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "HTML": [
+          "onet",
+          "jobs"
+        ],
+        "CSS": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "JavaScript": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "React": [
+          "onet",
+          "jobs"
+        ],
+        "Node.js": [
+          "onet",
+          "jobs"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Authentication & Authorization": [],
+        "Database Design": [],
+        "Data Structures": [
+          "jobs"
+        ],
+        "Express.js": [],
+        "MongoDB": [
+          "onet"
+        ],
+        "TypeScript": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "Algorithms": [
+          "jobs"
+        ],
+        "Software Testing": [
+          "jobs"
+        ],
+        "Responsive Design": [],
+        "System Design": [
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 19,
+        "externally_corroborated": 15
+      }
+    },
+    {
+      "role_id": "mern_developer",
+      "canonical_name": "MERN Developer",
+      "onet_soc": "15-1254.00",
+      "aliases": [
+        "mern stack developer",
+        "mern engineer",
+        "mern full stack developer"
+      ],
+      "description": "Builds web applications with MongoDB, Express.js, React and Node.js.",
+      "core_skills": [
+        {
+          "skill": "JavaScript",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "React",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Node.js",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Express.js",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "MongoDB",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "REST API",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "HTML",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "CSS",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Authentication & Authorization",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "intermediate",
+          "importance": 4
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Redux",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "TypeScript",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Algorithms",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Software Testing",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Teamwork"
+      ],
+      "typical_projects": [
+        {
+          "title": "Notes app (MERN)",
+          "skills": [
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+          ],
+          "difficulty": "beginner",
+          "description": "CRUD notes with a REST backend."
+        },
+        {
+          "title": "Social feed with authentication",
+          "skills": [
+            "React",
+            "Express.js",
+            "MongoDB",
+            "Authentication & Authorization"
+          ],
+          "difficulty": "intermediate",
+          "description": "JWT login, posts, likes and pagination."
+        },
+        {
+          "title": "Real-time collaboration board",
+          "skills": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Redux",
+            "Docker"
+          ],
+          "difficulty": "advanced",
+          "description": "WebSocket updates, global state and containerised deployment."
+        }
+      ],
+      "interview_topics": [
+        "JavaScript and ES6+",
+        "React hooks and state management",
+        "Express middleware and routing",
+        "MongoDB schema design and aggregation",
+        "JWT authentication",
+        "REST API design",
+        "Basic DSA"
+      ],
+      "related_roles": [
+        "Full Stack Developer",
+        "Frontend Developer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "FRONTEND",
+        "TOOL",
+        "BACKEND",
+        "DATABASE",
+        "DEVOPS"
+      ],
+      "onet_title": "Web Developers",
+      "esco_occupation": "web developer",
+      "tools": [
+        "Git"
+      ],
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "REST API",
+        "HTML",
+        "CSS",
+        "Authentication & Authorization",
+        "Redux",
+        "TypeScript",
+        "Docker"
+      ],
+      "knowledge_areas": [
+        "Data Structures",
+        "Algorithms",
+        "Software Testing"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "Linux",
+        "HTTP & Web Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Git",
+        "HTML",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "MongoDB",
+        "Programming Fundamentals",
+        "CSS",
+        "Data Structures",
+        "Docker",
+        "JavaScript",
+        "REST API",
+        "Software Testing",
+        "Algorithms",
+        "Authentication & Authorization",
+        "Node.js",
+        "React",
+        "TypeScript",
+        "Express.js",
+        "Redux"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "JavaScript": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "React": [
+          "onet",
+          "jobs"
+        ],
+        "Node.js": [
+          "onet",
+          "jobs"
+        ],
+        "Express.js": [],
+        "MongoDB": [
+          "onet"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "HTML": [
+          "onet",
+          "jobs"
+        ],
+        "CSS": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Authentication & Authorization": [],
+        "Data Structures": [
+          "jobs"
+        ],
+        "Redux": [
+          "onet"
+        ],
+        "TypeScript": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "Algorithms": [
+          "jobs"
+        ],
+        "Software Testing": [
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 16,
+        "externally_corroborated": 14
+      }
+    },
+    {
+      "role_id": "java_developer",
+      "canonical_name": "Java Developer",
+      "onet_soc": "15-1252.00",
+      "aliases": [
+        "java engineer",
+        "java backend developer",
+        "java programmer",
+        "spring boot developer"
+      ],
+      "description": "Builds enterprise applications and services on the Java platform.",
+      "core_skills": [
+        {
+          "skill": "Java",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Object Oriented Programming",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Spring Boot",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "REST API",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "JUnit",
+          "required_level": "beginner",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Algorithms",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Microservices",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "MySQL",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "DBMS",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "System Design",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Library management console app",
+          "skills": [
+            "Java",
+            "Object Oriented Programming",
+            "Git"
+          ],
+          "difficulty": "beginner",
+          "description": "An OOP-designed console application with collections."
+        },
+        {
+          "title": "Spring Boot REST service",
+          "skills": [
+            "Spring Boot",
+            "REST API",
+            "SQL",
+            "JUnit"
+          ],
+          "difficulty": "intermediate",
+          "description": "Layered service with JPA persistence and unit tests."
+        },
+        {
+          "title": "Microservices order system",
+          "skills": [
+            "Spring Boot",
+            "Microservices",
+            "Docker",
+            "MySQL"
+          ],
+          "difficulty": "advanced",
+          "description": "Multiple services communicating over REST, containerised."
+        }
+      ],
+      "interview_topics": [
+        "Core Java: collections, generics, exceptions",
+        "OOP and SOLID principles",
+        "Multithreading and concurrency",
+        "JVM memory and garbage collection",
+        "Spring Boot, dependency injection and JPA",
+        "SQL and transactions",
+        "Data structures and algorithms"
+      ],
+      "related_roles": [
+        "Backend Developer",
+        "Software Engineer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "TOOL",
+        "DATABASE",
+        "BACKEND",
+        "QA",
+        "DEVOPS"
+      ],
+      "onet_title": "Software Developers",
+      "esco_occupation": "software developer",
+      "tools": [
+        "Git"
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "SQL",
+        "REST API",
+        "JUnit",
+        "Microservices",
+        "Docker",
+        "MySQL"
+      ],
+      "knowledge_areas": [
+        "Object Oriented Programming",
+        "Data Structures",
+        "Algorithms",
+        "DBMS",
+        "System Design"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "Linux",
+        "HTTP & Web Fundamentals",
+        "Computer Networks"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "Programming Fundamentals",
+        "SQL",
+        "DBMS",
+        "Data Structures",
+        "Docker",
+        "Java",
+        "MySQL",
+        "Object Oriented Programming",
+        "REST API",
+        "Algorithms",
+        "JUnit",
+        "Microservices",
+        "Spring Boot",
+        "System Design"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Java": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "Object Oriented Programming": [
+          "esco",
+          "jobs"
+        ],
+        "Spring Boot": [
+          "onet",
+          "jobs"
+        ],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "Data Structures": [
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "JUnit": [
+          "onet",
+          "jobs"
+        ],
+        "Algorithms": [
+          "jobs"
+        ],
+        "Microservices": [
+          "onet",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "MySQL": [
+          "onet",
+          "jobs"
+        ],
+        "DBMS": [],
+        "System Design": [
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 14,
+        "externally_corroborated": 13
+      }
+    },
+    {
+      "role_id": "python_developer",
+      "canonical_name": "Python Developer",
+      "onet_soc": "15-1252.00",
+      "aliases": [
+        "python engineer",
+        "python programmer",
+        "django developer",
+        "python backend developer"
+      ],
+      "description": "Builds applications, services and automation in Python.",
+      "core_skills": [
+        {
+          "skill": "Python",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Object Oriented Programming",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "REST API",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Django",
+          "required_level": "intermediate",
+          "importance": 4
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "FastAPI",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Flask",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Pytest",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "PostgreSQL",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Algorithms",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Linux",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "File-organiser automation script",
+          "skills": [
+            "Python",
+            "Git"
+          ],
+          "difficulty": "beginner",
+          "description": "A tested script that automates a repetitive task."
+        },
+        {
+          "title": "Django blog with authentication",
+          "skills": [
+            "Django",
+            "SQL",
+            "REST API",
+            "Pytest"
+          ],
+          "difficulty": "intermediate",
+          "description": "Models, views, authentication and tests."
+        },
+        {
+          "title": "Async API with background jobs",
+          "skills": [
+            "FastAPI",
+            "PostgreSQL",
+            "Docker",
+            "Pytest"
+          ],
+          "difficulty": "advanced",
+          "description": "Typed async API with a task queue and containers."
+        }
+      ],
+      "interview_topics": [
+        "Python data types, comprehensions and generators",
+        "OOP in Python and decorators",
+        "Django or FastAPI request lifecycle",
+        "SQL and ORMs",
+        "Testing with pytest",
+        "Data structures and algorithms",
+        "Concurrency: threads, processes and async"
+      ],
+      "related_roles": [
+        "Backend Developer",
+        "Data Engineer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "TOOL",
+        "DATABASE",
+        "BACKEND",
+        "QA",
+        "DEVOPS"
+      ],
+      "onet_title": "Software Developers",
+      "esco_occupation": "software developer",
+      "tools": [
+        "Git",
+        "Linux"
+      ],
+      "technologies": [
+        "Python",
+        "REST API",
+        "SQL",
+        "Django",
+        "FastAPI",
+        "Flask",
+        "Pytest",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "knowledge_areas": [
+        "Object Oriented Programming",
+        "Data Structures",
+        "Algorithms"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "HTTP & Web Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "Programming Fundamentals",
+        "SQL",
+        "Data Structures",
+        "Docker",
+        "Object Oriented Programming",
+        "PostgreSQL",
+        "Python",
+        "REST API",
+        "Algorithms",
+        "Django",
+        "FastAPI",
+        "Flask",
+        "Pytest"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Python": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "Object Oriented Programming": [
+          "esco",
+          "jobs"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Data Structures": [
+          "jobs"
+        ],
+        "Django": [
+          "onet"
+        ],
+        "FastAPI": [],
+        "Flask": [],
+        "Pytest": [],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "PostgreSQL": [
+          "onet",
+          "jobs"
+        ],
+        "Algorithms": [
+          "jobs"
+        ],
+        "Linux": [
+          "onet",
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 14,
+        "externally_corroborated": 11
+      }
+    },
+    {
+      "role_id": "data_analyst",
+      "canonical_name": "Data Analyst",
+      "onet_soc": "15-2051.01",
+      "aliases": [
+        "business data analyst",
+        "reporting analyst",
+        "analytics analyst",
+        "bi analyst"
+      ],
+      "description": "Turns data into decisions through querying, analysis and clear reporting.",
+      "core_skills": [
+        {
+          "skill": "SQL",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Excel",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Data Analysis",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Data Visualization",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Statistics",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Power BI",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Python",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Pandas",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Tableau",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "A/B Testing",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Business Analysis",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Sales dashboard in Excel",
+          "skills": [
+            "Excel",
+            "Data Visualization"
+          ],
+          "difficulty": "beginner",
+          "description": "Pivot tables and charts answering five business questions."
+        },
+        {
+          "title": "SQL analysis of a retail dataset",
+          "skills": [
+            "SQL",
+            "Data Analysis",
+            "Statistics"
+          ],
+          "difficulty": "intermediate",
+          "description": "A written report backed by documented queries."
+        },
+        {
+          "title": "Interactive BI dashboard",
+          "skills": [
+            "Power BI",
+            "SQL",
+            "Data Visualization",
+            "Statistics"
+          ],
+          "difficulty": "advanced",
+          "description": "A published dashboard with drill-downs and a findings summary."
+        }
+      ],
+      "interview_topics": [
+        "SQL joins, aggregation and window functions",
+        "Excel: pivot tables and lookups",
+        "Descriptive statistics and distributions",
+        "Hypothesis testing basics",
+        "Choosing the right chart",
+        "Case studies: metrics and business problems"
+      ],
+      "related_roles": [
+        "Business Analyst",
+        "Data Scientist",
+        "Product Analyst"
+      ],
+      "track_order": [
+        "LANGUAGE",
+        "DATA",
+        "TOOL",
+        "BUSINESS"
+      ],
+      "onet_title": "Business Intelligence Analysts",
+      "esco_occupation": "data analyst",
+      "tools": [],
+      "technologies": [
+        "SQL",
+        "Excel",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Power BI",
+        "Python",
+        "Pandas",
+        "Tableau",
+        "A/B Testing"
+      ],
+      "knowledge_areas": [
+        "Business Analysis"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "NumPy"
+      ],
+      "recommended_learning_order": [
+        "Business Analysis",
+        "Data Visualization",
+        "Excel",
+        "Power BI",
+        "Programming Fundamentals",
+        "SQL",
+        "Statistics",
+        "Tableau",
+        "A/B Testing",
+        "Data Analysis",
+        "Python",
+        "NumPy",
+        "Pandas"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Excel": [
+          "onet",
+          "jobs"
+        ],
+        "Data Analysis": [
+          "jobs"
+        ],
+        "Data Visualization": [
+          "jobs"
+        ],
+        "Statistics": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "Power BI": [
+          "jobs"
+        ],
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "Pandas": [],
+        "Tableau": [
+          "onet",
+          "jobs"
+        ],
+        "A/B Testing": [],
+        "Business Analysis": [
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 11,
+        "externally_corroborated": 9
+      }
+    },
+    {
+      "role_id": "data_scientist",
+      "canonical_name": "Data Scientist",
+      "onet_soc": "15-2051.00",
+      "aliases": [
+        "ml scientist",
+        "applied scientist",
+        "data science engineer"
+      ],
+      "description": "Builds statistical and machine-learning models to answer questions and predict outcomes.",
+      "core_skills": [
+        {
+          "skill": "Python",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Statistics",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Pandas",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "NumPy",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Machine Learning",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "scikit-learn",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Data Visualization",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Feature Engineering",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Linear Algebra",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Deep Learning",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "A/B Testing",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Jupyter",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Git",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "PyTorch",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Exploratory analysis of a public dataset",
+          "skills": [
+            "Python",
+            "Pandas",
+            "Data Visualization"
+          ],
+          "difficulty": "beginner",
+          "description": "A notebook with cleaned data and five findings."
+        },
+        {
+          "title": "Churn prediction model",
+          "skills": [
+            "Machine Learning",
+            "scikit-learn",
+            "Feature Engineering",
+            "Statistics"
+          ],
+          "difficulty": "intermediate",
+          "description": "A validated classifier with an honest evaluation."
+        },
+        {
+          "title": "End-to-end forecasting project",
+          "skills": [
+            "Machine Learning",
+            "Feature Engineering",
+            "SQL",
+            "Git"
+          ],
+          "difficulty": "advanced",
+          "description": "Data pipeline, model comparison and a written report."
+        }
+      ],
+      "interview_topics": [
+        "Probability and statistics",
+        "Bias-variance, overfitting and regularisation",
+        "Supervised vs unsupervised learning",
+        "Evaluation metrics and validation",
+        "Feature engineering",
+        "SQL for analysis",
+        "Explaining a past project end to end"
+      ],
+      "related_roles": [
+        "Machine Learning Engineer",
+        "Data Analyst"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "DATA",
+        "TOOL",
+        "ML"
+      ],
+      "onet_title": "Data Scientists",
+      "esco_occupation": "data scientist",
+      "tools": [
+        "Jupyter",
+        "Git"
+      ],
+      "technologies": [
+        "Python",
+        "Statistics",
+        "Pandas",
+        "NumPy",
+        "Machine Learning",
+        "SQL",
+        "scikit-learn",
+        "Data Visualization",
+        "Feature Engineering",
+        "Linear Algebra",
+        "Deep Learning",
+        "A/B Testing",
+        "PyTorch"
+      ],
+      "knowledge_areas": [],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Data Visualization",
+        "Git",
+        "Linear Algebra",
+        "Programming Fundamentals",
+        "SQL",
+        "Statistics",
+        "A/B Testing",
+        "Python",
+        "Jupyter",
+        "NumPy",
+        "Pandas",
+        "Feature Engineering",
+        "Machine Learning",
+        "scikit-learn",
+        "Deep Learning",
+        "PyTorch"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "Statistics": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "Pandas": [
+          "onet"
+        ],
+        "NumPy": [
+          "onet"
+        ],
+        "Machine Learning": [
+          "jobs"
+        ],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "scikit-learn": [
+          "onet"
+        ],
+        "Data Visualization": [
+          "jobs"
+        ],
+        "Feature Engineering": [],
+        "Linear Algebra": [],
+        "Deep Learning": [],
+        "A/B Testing": [],
+        "Jupyter": [
+          "onet"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "PyTorch": [
+          "onet"
+        ]
+      },
+      "corroboration": {
+        "requirements": 15,
+        "externally_corroborated": 11
+      }
+    },
+    {
+      "role_id": "machine_learning_engineer",
+      "canonical_name": "Machine Learning Engineer",
+      "onet_soc": "15-2051.00",
+      "aliases": [
+        "ml engineer",
+        "mle",
+        "machine learning developer"
+      ],
+      "description": "Builds, deploys and maintains machine-learning systems in production.",
+      "core_skills": [
+        {
+          "skill": "Python",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Machine Learning",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Pandas",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "NumPy",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Statistics",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Deep Learning",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "PyTorch",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "MLOps",
+          "required_level": "beginner",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Linear Algebra",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "REST API",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Feature Engineering",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "scikit-learn",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Algorithms",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Image classifier",
+          "skills": [
+            "Python",
+            "Deep Learning",
+            "PyTorch"
+          ],
+          "difficulty": "beginner",
+          "description": "A CNN trained and evaluated on a public dataset."
+        },
+        {
+          "title": "Model served behind an API",
+          "skills": [
+            "Machine Learning",
+            "REST API",
+            "Docker",
+            "Git"
+          ],
+          "difficulty": "intermediate",
+          "description": "A trained model exposed as a containerised endpoint."
+        },
+        {
+          "title": "Training-to-deployment pipeline",
+          "skills": [
+            "MLOps",
+            "Deep Learning",
+            "Docker",
+            "Feature Engineering"
+          ],
+          "difficulty": "advanced",
+          "description": "Reproducible training, versioned models and monitoring."
+        }
+      ],
+      "interview_topics": [
+        "ML fundamentals and model selection",
+        "Neural networks and backpropagation",
+        "Optimisation and regularisation",
+        "Model evaluation and data leakage",
+        "Serving, latency and monitoring",
+        "Python and data structures",
+        "System design for ML"
+      ],
+      "related_roles": [
+        "Data Scientist",
+        "AI Engineer",
+        "Data Engineer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "DATA",
+        "TOOL",
+        "ML",
+        "BACKEND",
+        "DEVOPS"
+      ],
+      "onet_title": "Data Scientists",
+      "esco_occupation": "data scientist",
+      "tools": [
+        "Git"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "Pandas",
+        "NumPy",
+        "Statistics",
+        "Deep Learning",
+        "PyTorch",
+        "MLOps",
+        "Linear Algebra",
+        "Docker",
+        "SQL",
+        "REST API",
+        "Feature Engineering",
+        "scikit-learn"
+      ],
+      "knowledge_areas": [
+        "Data Structures",
+        "Algorithms"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "Linux",
+        "HTTP & Web Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Linear Algebra",
+        "Linux",
+        "Programming Fundamentals",
+        "SQL",
+        "Statistics",
+        "Data Structures",
+        "Docker",
+        "Python",
+        "REST API",
+        "Algorithms",
+        "NumPy",
+        "Pandas",
+        "Feature Engineering",
+        "Machine Learning",
+        "scikit-learn",
+        "Deep Learning",
+        "MLOps",
+        "PyTorch"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "Machine Learning": [
+          "jobs"
+        ],
+        "Pandas": [
+          "onet"
+        ],
+        "NumPy": [
+          "onet"
+        ],
+        "Statistics": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "Deep Learning": [],
+        "PyTorch": [
+          "onet"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Data Structures": [
+          "jobs"
+        ],
+        "MLOps": [],
+        "Linear Algebra": [],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "Feature Engineering": [],
+        "scikit-learn": [
+          "onet"
+        ],
+        "Algorithms": [
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 17,
+        "externally_corroborated": 13
+      }
+    },
+    {
+      "role_id": "ai_engineer",
+      "canonical_name": "AI Engineer",
+      "onet_soc": "15-2051.00",
+      "aliases": [
+        "generative ai engineer",
+        "llm engineer",
+        "genai developer",
+        "ai developer"
+      ],
+      "description": "Builds applications on top of machine-learning and large language models.",
+      "core_skills": [
+        {
+          "skill": "Python",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "LLM Applications",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "REST API",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Machine Learning",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Deep Learning",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Natural Language Processing",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "PyTorch",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "FastAPI",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "SQL",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Pandas",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Statistics",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "MLOps",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Document question-answering bot",
+          "skills": [
+            "Python",
+            "LLM Applications",
+            "REST API"
+          ],
+          "difficulty": "beginner",
+          "description": "Retrieval over your own documents with cited answers."
+        },
+        {
+          "title": "Evaluated RAG service",
+          "skills": [
+            "LLM Applications",
+            "FastAPI",
+            "Docker",
+            "Natural Language Processing"
+          ],
+          "difficulty": "intermediate",
+          "description": "A served pipeline with an evaluation set and metrics."
+        },
+        {
+          "title": "Fine-tuned domain model",
+          "skills": [
+            "Deep Learning",
+            "PyTorch",
+            "MLOps",
+            "LLM Applications"
+          ],
+          "difficulty": "advanced",
+          "description": "A fine-tuned small model compared honestly against a baseline."
+        }
+      ],
+      "interview_topics": [
+        "Transformers and attention at a high level",
+        "Embeddings and vector search",
+        "Retrieval-augmented generation",
+        "Prompt design and evaluation",
+        "Fine-tuning vs prompting trade-offs",
+        "ML fundamentals",
+        "API design and latency"
+      ],
+      "related_roles": [
+        "Machine Learning Engineer",
+        "Data Scientist"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "DATA",
+        "TOOL",
+        "ML",
+        "BACKEND",
+        "DEVOPS"
+      ],
+      "onet_title": "Data Scientists",
+      "esco_occupation": "data scientist",
+      "tools": [
+        "Git"
+      ],
+      "technologies": [
+        "Python",
+        "LLM Applications",
+        "REST API",
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing",
+        "PyTorch",
+        "FastAPI",
+        "Docker",
+        "SQL",
+        "Pandas",
+        "Statistics",
+        "MLOps"
+      ],
+      "knowledge_areas": [],
+      "prerequisites": [
+        "Linux",
+        "Programming Fundamentals",
+        "HTTP & Web Fundamentals",
+        "NumPy",
+        "Linear Algebra"
+      ],
+      "recommended_learning_order": [
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Linear Algebra",
+        "Linux",
+        "Programming Fundamentals",
+        "SQL",
+        "Statistics",
+        "Docker",
+        "Python",
+        "REST API",
+        "FastAPI",
+        "LLM Applications",
+        "NumPy",
+        "Pandas",
+        "Machine Learning",
+        "Deep Learning",
+        "MLOps",
+        "PyTorch",
+        "Natural Language Processing"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "LLM Applications": [],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "Machine Learning": [
+          "jobs"
+        ],
+        "Deep Learning": [],
+        "Natural Language Processing": [
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "PyTorch": [
+          "onet"
+        ],
+        "FastAPI": [],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Pandas": [
+          "onet"
+        ],
+        "Statistics": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "MLOps": []
+      },
+      "corroboration": {
+        "requirements": 14,
+        "externally_corroborated": 10
+      }
+    },
+    {
+      "role_id": "data_engineer",
+      "canonical_name": "Data Engineer",
+      "onet_soc": "15-1243.00",
+      "aliases": [
+        "big data engineer",
+        "etl developer",
+        "data pipeline engineer",
+        "analytics engineer"
+      ],
+      "description": "Builds the pipelines and storage that make data reliable and available.",
+      "core_skills": [
+        {
+          "skill": "SQL",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Python",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "ETL & Data Pipelines",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Data Warehousing",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Database Design",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Big Data",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Apache Airflow",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Apache Kafka",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "AWS",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Docker",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Linux",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "CSV-to-database loader",
+          "skills": [
+            "Python",
+            "SQL",
+            "Git"
+          ],
+          "difficulty": "beginner",
+          "description": "A repeatable, validated load of raw files into tables."
+        },
+        {
+          "title": "Scheduled ETL pipeline",
+          "skills": [
+            "ETL & Data Pipelines",
+            "Apache Airflow",
+            "SQL",
+            "Data Warehousing"
+          ],
+          "difficulty": "intermediate",
+          "description": "A daily pipeline with data-quality checks."
+        },
+        {
+          "title": "Batch analytics platform",
+          "skills": [
+            "Big Data",
+            "Data Warehousing",
+            "AWS",
+            "Docker"
+          ],
+          "difficulty": "advanced",
+          "description": "Partitioned storage, Spark jobs and a documented data model."
+        }
+      ],
+      "interview_topics": [
+        "Advanced SQL and query optimisation",
+        "Data modelling: star and snowflake schemas",
+        "ETL vs ELT and idempotency",
+        "Batch vs streaming",
+        "Spark fundamentals",
+        "Data quality and testing",
+        "Python for data processing"
+      ],
+      "related_roles": [
+        "Data Analyst",
+        "Machine Learning Engineer",
+        "Backend Developer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "TOOL",
+        "DATABASE",
+        "DATA_ENG",
+        "CLOUD",
+        "DEVOPS"
+      ],
+      "onet_title": "Database Architects",
+      "esco_occupation": "data engineer",
+      "tools": [
+        "Git",
+        "Linux"
+      ],
+      "technologies": [
+        "SQL",
+        "Python",
+        "ETL & Data Pipelines",
+        "Data Warehousing",
+        "Database Design",
+        "Big Data",
+        "Apache Airflow",
+        "Apache Kafka",
+        "AWS",
+        "Docker"
+      ],
+      "knowledge_areas": [
+        "Data Structures"
+      ],
+      "prerequisites": [
+        "Computer Networks",
+        "Programming Fundamentals",
+        "HTTP & Web Fundamentals",
+        "REST API"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "Programming Fundamentals",
+        "SQL",
+        "AWS",
+        "Data Structures",
+        "Data Warehousing",
+        "Database Design",
+        "Docker",
+        "Python",
+        "REST API",
+        "Apache Airflow",
+        "Apache Kafka",
+        "Big Data",
+        "ETL & Data Pipelines"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "ETL & Data Pipelines": [
+          "onet"
+        ],
+        "Data Warehousing": [
+          "onet"
+        ],
+        "Database Design": [],
+        "Big Data": [
+          "onet",
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Apache Airflow": [
+          "onet"
+        ],
+        "Apache Kafka": [
+          "onet"
+        ],
+        "AWS": [
+          "onet",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "Linux": [
+          "onet",
+          "jobs"
+        ],
+        "Data Structures": [
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 13,
+        "externally_corroborated": 12
+      }
+    },
+    {
+      "role_id": "devops_engineer",
+      "canonical_name": "DevOps Engineer",
+      "onet_soc": "15-1244.00",
+      "aliases": [
+        "devops",
+        "platform engineer",
+        "build and release engineer",
+        "infrastructure engineer"
+      ],
+      "description": "Automates how software is built, tested, deployed and operated.",
+      "core_skills": [
+        {
+          "skill": "Linux",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Docker",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "CI/CD",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Shell Scripting",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "AWS",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Kubernetes",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Computer Networks",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Terraform",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Monitoring & Observability",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Python",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Jenkins",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Nginx",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Ansible",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Containerise a web app",
+          "skills": [
+            "Docker",
+            "Linux",
+            "Git"
+          ],
+          "difficulty": "beginner",
+          "description": "A Dockerfile and compose setup for an existing app."
+        },
+        {
+          "title": "CI/CD pipeline",
+          "skills": [
+            "CI/CD",
+            "Docker",
+            "Git",
+            "Shell Scripting"
+          ],
+          "difficulty": "intermediate",
+          "description": "Automated build, test and deploy on every commit."
+        },
+        {
+          "title": "Kubernetes deployment on a cloud",
+          "skills": [
+            "Kubernetes",
+            "AWS",
+            "Terraform",
+            "Monitoring & Observability"
+          ],
+          "difficulty": "advanced",
+          "description": "Infrastructure as code with dashboards and alerts."
+        }
+      ],
+      "interview_topics": [
+        "Linux administration and shell",
+        "Networking: DNS, HTTP, load balancing",
+        "Docker images and containers",
+        "CI/CD pipeline design",
+        "Kubernetes objects and scheduling",
+        "Infrastructure as code",
+        "Monitoring, logging and incident handling"
+      ],
+      "related_roles": [
+        "Cloud Engineer",
+        "Site Reliability Engineer",
+        "Backend Developer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "TOOL",
+        "LANGUAGE",
+        "DEVOPS",
+        "CLOUD"
+      ],
+      "onet_title": "Network and Computer Systems Administrators",
+      "esco_occupation": "DevOps engineer",
+      "tools": [
+        "Linux",
+        "Git"
+      ],
+      "technologies": [
+        "Docker",
+        "CI/CD",
+        "Shell Scripting",
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Monitoring & Observability",
+        "Python",
+        "Jenkins",
+        "Nginx",
+        "Ansible"
+      ],
+      "knowledge_areas": [
+        "Computer Networks"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "Git",
+        "Linux",
+        "Programming Fundamentals",
+        "AWS",
+        "Ansible",
+        "CI/CD",
+        "Docker",
+        "Monitoring & Observability",
+        "Nginx",
+        "Python",
+        "Shell Scripting",
+        "Terraform",
+        "Jenkins",
+        "Kubernetes"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Linux": [
+          "onet",
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "CI/CD": [
+          "jobs"
+        ],
+        "Shell Scripting": [
+          "onet",
+          "jobs"
+        ],
+        "AWS": [
+          "onet",
+          "jobs"
+        ],
+        "Kubernetes": [
+          "jobs"
+        ],
+        "Computer Networks": [
+          "onet",
+          "jobs"
+        ],
+        "Terraform": [],
+        "Monitoring & Observability": [],
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "Jenkins": [
+          "jobs"
+        ],
+        "Nginx": [],
+        "Ansible": [
+          "onet"
+        ]
+      },
+      "corroboration": {
+        "requirements": 14,
+        "externally_corroborated": 11
+      }
+    },
+    {
+      "role_id": "cloud_engineer",
+      "canonical_name": "Cloud Engineer",
+      "onet_soc": "15-1244.00",
+      "aliases": [
+        "cloud developer",
+        "aws engineer",
+        "azure engineer",
+        "cloud infrastructure engineer"
+      ],
+      "description": "Designs and runs infrastructure and services on public cloud platforms.",
+      "core_skills": [
+        {
+          "skill": "AWS",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Linux",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Computer Networks",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Docker",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Terraform",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Shell Scripting",
+          "required_level": "beginner",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Kubernetes",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "CI/CD",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Python",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Monitoring & Observability",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Cybersecurity",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Azure",
+          "required_level": "beginner",
+          "importance": 1
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Static site on object storage",
+          "skills": [
+            "AWS",
+            "Git"
+          ],
+          "difficulty": "beginner",
+          "description": "A hosted site with a custom domain and HTTPS."
+        },
+        {
+          "title": "Three-tier app on a cloud",
+          "skills": [
+            "AWS",
+            "Computer Networks",
+            "Docker",
+            "Linux"
+          ],
+          "difficulty": "intermediate",
+          "description": "Network, compute and database provisioned securely."
+        },
+        {
+          "title": "Infrastructure as code platform",
+          "skills": [
+            "Terraform",
+            "AWS",
+            "Kubernetes",
+            "Monitoring & Observability"
+          ],
+          "difficulty": "advanced",
+          "description": "Reusable modules, environments and observability."
+        }
+      ],
+      "interview_topics": [
+        "Core cloud services: compute, storage, networking",
+        "Identity and access management",
+        "Networking: subnets, routing, DNS",
+        "High availability and scaling",
+        "Infrastructure as code",
+        "Cost and security basics",
+        "Linux fundamentals"
+      ],
+      "related_roles": [
+        "DevOps Engineer",
+        "Site Reliability Engineer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "TOOL",
+        "LANGUAGE",
+        "DEVOPS",
+        "CLOUD",
+        "SECURITY"
+      ],
+      "onet_title": "Network and Computer Systems Administrators",
+      "esco_occupation": "cloud engineer",
+      "tools": [
+        "Linux",
+        "Git"
+      ],
+      "technologies": [
+        "AWS",
+        "Docker",
+        "Terraform",
+        "Shell Scripting",
+        "Kubernetes",
+        "CI/CD",
+        "Python",
+        "Monitoring & Observability",
+        "Azure"
+      ],
+      "knowledge_areas": [
+        "Computer Networks",
+        "Cybersecurity"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "Git",
+        "Linux",
+        "Programming Fundamentals",
+        "AWS",
+        "Azure",
+        "CI/CD",
+        "Cybersecurity",
+        "Docker",
+        "Monitoring & Observability",
+        "Python",
+        "Shell Scripting",
+        "Terraform",
+        "Kubernetes"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "AWS": [
+          "onet",
+          "jobs"
+        ],
+        "Linux": [
+          "onet",
+          "jobs"
+        ],
+        "Computer Networks": [
+          "onet",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "Terraform": [],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Shell Scripting": [
+          "onet",
+          "jobs"
+        ],
+        "Kubernetes": [
+          "jobs"
+        ],
+        "CI/CD": [
+          "jobs"
+        ],
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "Monitoring & Observability": [],
+        "Cybersecurity": [
+          "onet"
+        ],
+        "Azure": [
+          "onet",
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 13,
+        "externally_corroborated": 11
+      }
+    },
+    {
+      "role_id": "site_reliability_engineer",
+      "canonical_name": "Site Reliability Engineer",
+      "onet_soc": "15-1244.00",
+      "aliases": [
+        "sre",
+        "reliability engineer",
+        "production engineer"
+      ],
+      "description": "Keeps services reliable through automation, monitoring and engineering.",
+      "core_skills": [
+        {
+          "skill": "Linux",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Monitoring & Observability",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Python",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Computer Networks",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Docker",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Kubernetes",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "CI/CD",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "System Design",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "AWS",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Shell Scripting",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Terraform",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Operating Systems",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Service health dashboard",
+          "skills": [
+            "Monitoring & Observability",
+            "Linux",
+            "Docker"
+          ],
+          "difficulty": "beginner",
+          "description": "Metrics and alerts for a sample service."
+        },
+        {
+          "title": "Automated incident runbook",
+          "skills": [
+            "Python",
+            "Monitoring & Observability",
+            "Shell Scripting"
+          ],
+          "difficulty": "intermediate",
+          "description": "Scripts that detect and remediate common failures."
+        },
+        {
+          "title": "Highly available deployment",
+          "skills": [
+            "Kubernetes",
+            "System Design",
+            "AWS",
+            "CI/CD"
+          ],
+          "difficulty": "advanced",
+          "description": "Multi-zone deployment with SLOs and load testing."
+        }
+      ],
+      "interview_topics": [
+        "Linux internals and troubleshooting",
+        "SLIs, SLOs and error budgets",
+        "Networking and load balancing",
+        "Monitoring and alerting design",
+        "Incident response and postmortems",
+        "Capacity planning",
+        "System design for reliability"
+      ],
+      "related_roles": [
+        "DevOps Engineer",
+        "Cloud Engineer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "TOOL",
+        "LANGUAGE",
+        "DEVOPS",
+        "CLOUD"
+      ],
+      "onet_title": "Network and Computer Systems Administrators",
+      "esco_occupation": "ICT system administrator",
+      "tools": [
+        "Linux",
+        "Git"
+      ],
+      "technologies": [
+        "Monitoring & Observability",
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "AWS",
+        "Shell Scripting",
+        "Terraform"
+      ],
+      "knowledge_areas": [
+        "Computer Networks",
+        "System Design",
+        "Operating Systems"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "SQL",
+        "DBMS",
+        "HTTP & Web Fundamentals",
+        "REST API"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "Programming Fundamentals",
+        "SQL",
+        "AWS",
+        "CI/CD",
+        "DBMS",
+        "Docker",
+        "Monitoring & Observability",
+        "Operating Systems",
+        "Python",
+        "REST API",
+        "Shell Scripting",
+        "Terraform",
+        "Kubernetes",
+        "System Design"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Linux": [
+          "onet",
+          "jobs"
+        ],
+        "Monitoring & Observability": [],
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "Computer Networks": [
+          "onet",
+          "jobs"
+        ],
+        "Docker": [
+          "onet",
+          "jobs"
+        ],
+        "Kubernetes": [
+          "jobs"
+        ],
+        "CI/CD": [
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "System Design": [
+          "jobs"
+        ],
+        "AWS": [
+          "onet",
+          "jobs"
+        ],
+        "Shell Scripting": [
+          "onet",
+          "jobs"
+        ],
+        "Terraform": [],
+        "Operating Systems": [
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 13,
+        "externally_corroborated": 11
+      }
+    },
+    {
+      "role_id": "cybersecurity_analyst",
+      "canonical_name": "Cybersecurity Analyst",
+      "onet_soc": "15-1212.00",
+      "aliases": [
+        "security analyst",
+        "information security analyst",
+        "soc analyst",
+        "infosec analyst"
+      ],
+      "description": "Protects systems by monitoring, detecting and responding to security threats.",
+      "core_skills": [
+        {
+          "skill": "Cybersecurity",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Computer Networks",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Linux",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Network Security",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Incident Response",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Web Application Security",
+          "required_level": "beginner",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Python",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Shell Scripting",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Penetration Testing",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Operating Systems",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "AWS",
+          "required_level": "beginner",
+          "importance": 1
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Home lab with a firewall",
+          "skills": [
+            "Computer Networks",
+            "Linux",
+            "Network Security"
+          ],
+          "difficulty": "beginner",
+          "description": "A documented, segmented lab network."
+        },
+        {
+          "title": "Log analysis and alerting",
+          "skills": [
+            "Incident Response",
+            "Linux",
+            "Python"
+          ],
+          "difficulty": "intermediate",
+          "description": "Detection rules over collected logs with a short report."
+        },
+        {
+          "title": "Web application security assessment",
+          "skills": [
+            "Web Application Security",
+            "Penetration Testing",
+            "Cybersecurity"
+          ],
+          "difficulty": "advanced",
+          "description": "An authorised test of your own app with remediation notes."
+        }
+      ],
+      "interview_topics": [
+        "Networking: TCP/IP, DNS, HTTP",
+        "Common attacks and the OWASP Top 10",
+        "Authentication and encryption basics",
+        "Log analysis and SIEM concepts",
+        "Incident response lifecycle",
+        "Linux and Windows security basics"
+      ],
+      "related_roles": [
+        "Cloud Engineer",
+        "DevOps Engineer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "TOOL",
+        "LANGUAGE",
+        "SECURITY",
+        "CLOUD"
+      ],
+      "onet_title": "Information Security Analysts",
+      "esco_occupation": "ICT security administrator",
+      "tools": [
+        "Linux"
+      ],
+      "technologies": [
+        "Python",
+        "Shell Scripting",
+        "AWS"
+      ],
+      "knowledge_areas": [
+        "Cybersecurity",
+        "Computer Networks",
+        "Network Security",
+        "Incident Response",
+        "Web Application Security",
+        "Penetration Testing",
+        "Operating Systems"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "HTTP & Web Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Computer Networks",
+        "HTTP & Web Fundamentals",
+        "Linux",
+        "Programming Fundamentals",
+        "AWS",
+        "Cybersecurity",
+        "Network Security",
+        "Operating Systems",
+        "Python",
+        "Shell Scripting",
+        "Web Application Security",
+        "Incident Response",
+        "Penetration Testing"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Cybersecurity": [
+          "onet",
+          "esco"
+        ],
+        "Computer Networks": [
+          "onet",
+          "jobs"
+        ],
+        "Linux": [
+          "onet",
+          "jobs"
+        ],
+        "Network Security": [],
+        "Incident Response": [
+          "onet"
+        ],
+        "Web Application Security": [],
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "Shell Scripting": [
+          "onet",
+          "jobs"
+        ],
+        "Penetration Testing": [],
+        "Operating Systems": [
+          "jobs"
+        ],
+        "AWS": [
+          "onet",
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 11,
+        "externally_corroborated": 8
+      }
+    },
+    {
+      "role_id": "qa_engineer",
+      "canonical_name": "QA Engineer",
+      "onet_soc": "15-1253.00",
+      "aliases": [
+        "software tester",
+        "test engineer",
+        "sdet",
+        "quality assurance engineer",
+        "automation tester"
+      ],
+      "description": "Ensures software quality through test design, automation and defect analysis.",
+      "core_skills": [
+        {
+          "skill": "Software Testing",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Selenium",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Programming Fundamentals",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Postman",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Java",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "REST API",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "CI/CD",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Performance Testing",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Agile",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Jira",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Manual test plan for a web app",
+          "skills": [
+            "Software Testing",
+            "Jira"
+          ],
+          "difficulty": "beginner",
+          "description": "Test cases, a traceability matrix and bug reports."
+        },
+        {
+          "title": "UI automation suite",
+          "skills": [
+            "Selenium",
+            "Software Testing",
+            "Git"
+          ],
+          "difficulty": "intermediate",
+          "description": "Page-object automation for core user journeys."
+        },
+        {
+          "title": "API and CI test pipeline",
+          "skills": [
+            "Selenium",
+            "Postman",
+            "CI/CD",
+            "REST API"
+          ],
+          "difficulty": "advanced",
+          "description": "API tests running automatically on every build."
+        }
+      ],
+      "interview_topics": [
+        "Test design techniques",
+        "Test levels and types",
+        "Selenium locators and waits",
+        "API testing",
+        "Defect lifecycle and reporting",
+        "SQL for data validation",
+        "Basic programming and OOP"
+      ],
+      "related_roles": [
+        "Software Engineer",
+        "DevOps Engineer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "TOOL",
+        "PRACTICE",
+        "QA",
+        "BACKEND",
+        "DEVOPS"
+      ],
+      "onet_title": "Software Quality Assurance Analysts and Testers",
+      "esco_occupation": "software tester",
+      "tools": [
+        "Git",
+        "Postman",
+        "Jira"
+      ],
+      "technologies": [
+        "Selenium",
+        "SQL",
+        "Java",
+        "REST API",
+        "CI/CD",
+        "Performance Testing"
+      ],
+      "knowledge_areas": [
+        "Software Testing",
+        "Programming Fundamentals",
+        "Agile"
+      ],
+      "prerequisites": [
+        "HTTP & Web Fundamentals"
+      ],
+      "recommended_learning_order": [
+        "Agile",
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Jira",
+        "Programming Fundamentals",
+        "SQL",
+        "CI/CD",
+        "Java",
+        "REST API",
+        "Software Testing",
+        "Performance Testing",
+        "Postman",
+        "Selenium"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Software Testing": [
+          "jobs"
+        ],
+        "Selenium": [
+          "onet"
+        ],
+        "Programming Fundamentals": [],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Postman": [
+          "onet"
+        ],
+        "Java": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "CI/CD": [
+          "jobs"
+        ],
+        "Performance Testing": [
+          "onet"
+        ],
+        "Agile": [
+          "esco",
+          "jobs"
+        ],
+        "Jira": [
+          "onet",
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 12,
+        "externally_corroborated": 11
+      }
+    },
+    {
+      "role_id": "mobile_developer",
+      "canonical_name": "Mobile Developer",
+      "onet_soc": "15-1252.00",
+      "aliases": [
+        "android developer",
+        "mobile app developer",
+        "app developer",
+        "kotlin developer"
+      ],
+      "description": "Builds applications for mobile devices.",
+      "core_skills": [
+        {
+          "skill": "Programming Fundamentals",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Kotlin",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Android Development",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "REST API",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Git",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Object Oriented Programming",
+          "required_level": "intermediate",
+          "importance": 4
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Firebase",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "SQL",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Data Structures",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Software Testing",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Figma",
+          "required_level": "beginner",
+          "importance": 1
+        },
+        {
+          "skill": "Flutter",
+          "required_level": "beginner",
+          "importance": 1
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Teamwork"
+      ],
+      "typical_projects": [
+        {
+          "title": "Tip calculator app",
+          "skills": [
+            "Kotlin",
+            "Android Development"
+          ],
+          "difficulty": "beginner",
+          "description": "A single-screen app with state handling."
+        },
+        {
+          "title": "News reader with an API",
+          "skills": [
+            "Android Development",
+            "REST API",
+            "Git"
+          ],
+          "difficulty": "intermediate",
+          "description": "Lists, navigation, networking and offline cache."
+        },
+        {
+          "title": "Chat application",
+          "skills": [
+            "Android Development",
+            "Firebase",
+            "REST API",
+            "Software Testing"
+          ],
+          "difficulty": "advanced",
+          "description": "Real-time messaging with authentication and tests."
+        }
+      ],
+      "interview_topics": [
+        "Kotlin language features",
+        "Activity and fragment lifecycle",
+        "Layouts and navigation",
+        "Networking and background work",
+        "Local storage",
+        "App architecture patterns",
+        "Basic DSA"
+      ],
+      "related_roles": [
+        "Frontend Developer",
+        "Full Stack Developer"
+      ],
+      "track_order": [
+        "FOUNDATION",
+        "LANGUAGE",
+        "TOOL",
+        "MOBILE",
+        "BACKEND",
+        "DATABASE"
+      ],
+      "onet_title": "Software Developers",
+      "esco_occupation": "mobile application developer",
+      "tools": [
+        "Git",
+        "Figma"
+      ],
+      "technologies": [
+        "Kotlin",
+        "Android Development",
+        "REST API",
+        "Firebase",
+        "SQL",
+        "Flutter"
+      ],
+      "knowledge_areas": [
+        "Programming Fundamentals",
+        "Object Oriented Programming",
+        "Data Structures",
+        "Software Testing"
+      ],
+      "prerequisites": [
+        "HTTP & Web Fundamentals",
+        "JavaScript"
+      ],
+      "recommended_learning_order": [
+        "Figma",
+        "Git",
+        "HTTP & Web Fundamentals",
+        "Programming Fundamentals",
+        "SQL",
+        "Data Structures",
+        "Flutter",
+        "JavaScript",
+        "Kotlin",
+        "Object Oriented Programming",
+        "REST API",
+        "Software Testing",
+        "Android Development",
+        "Firebase"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Programming Fundamentals": [],
+        "Kotlin": [
+          "onet"
+        ],
+        "Android Development": [
+          "onet",
+          "esco"
+        ],
+        "REST API": [
+          "onet",
+          "jobs"
+        ],
+        "Git": [
+          "onet",
+          "jobs"
+        ],
+        "Object Oriented Programming": [
+          "esco",
+          "jobs"
+        ],
+        "Firebase": [],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Data Structures": [
+          "jobs"
+        ],
+        "Software Testing": [
+          "jobs"
+        ],
+        "Figma": [
+          "onet"
+        ],
+        "Flutter": []
+      },
+      "corroboration": {
+        "requirements": 12,
+        "externally_corroborated": 9
+      }
+    },
+    {
+      "role_id": "business_analyst",
+      "canonical_name": "Business Analyst",
+      "onet_soc": "13-1111.00",
+      "aliases": [
+        "it business analyst",
+        "systems analyst",
+        "functional analyst"
+      ],
+      "description": "Bridges business needs and technical delivery through analysis and clear requirements.",
+      "core_skills": [
+        {
+          "skill": "Business Analysis",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Requirements Gathering",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "SQL",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Excel",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Data Visualization",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Agile",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Power BI",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Jira",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Data Analysis",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Project Management",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Statistics",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving",
+        "Teamwork"
+      ],
+      "typical_projects": [
+        {
+          "title": "Requirements document for an app",
+          "skills": [
+            "Requirements Gathering",
+            "Business Analysis"
+          ],
+          "difficulty": "beginner",
+          "description": "User stories with acceptance criteria and process flows."
+        },
+        {
+          "title": "Process analysis with data",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Data Visualization",
+            "Business Analysis"
+          ],
+          "difficulty": "intermediate",
+          "description": "A quantified current-state analysis with recommendations."
+        },
+        {
+          "title": "Product backlog and KPI dashboard",
+          "skills": [
+            "Agile",
+            "Power BI",
+            "Requirements Gathering",
+            "Data Analysis"
+          ],
+          "difficulty": "advanced",
+          "description": "A prioritised backlog with measurable outcomes."
+        }
+      ],
+      "interview_topics": [
+        "Requirement elicitation techniques",
+        "Writing user stories and acceptance criteria",
+        "Process modelling",
+        "SQL basics",
+        "Stakeholder communication scenarios",
+        "Agile ceremonies and artefacts",
+        "Case studies"
+      ],
+      "related_roles": [
+        "Data Analyst",
+        "Product Analyst"
+      ],
+      "track_order": [
+        "BUSINESS",
+        "LANGUAGE",
+        "DATA",
+        "TOOL",
+        "PRACTICE"
+      ],
+      "onet_title": "Management Analysts",
+      "esco_occupation": "ICT business analyst",
+      "tools": [
+        "Jira"
+      ],
+      "technologies": [
+        "SQL",
+        "Excel",
+        "Data Visualization",
+        "Power BI",
+        "Data Analysis",
+        "Statistics"
+      ],
+      "knowledge_areas": [
+        "Business Analysis",
+        "Requirements Gathering",
+        "Agile",
+        "Project Management"
+      ],
+      "prerequisites": [],
+      "recommended_learning_order": [
+        "Agile",
+        "Business Analysis",
+        "Data Visualization",
+        "Excel",
+        "Jira",
+        "Power BI",
+        "Project Management",
+        "Requirements Gathering",
+        "SQL",
+        "Statistics",
+        "Data Analysis"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "Business Analysis": [
+          "jobs"
+        ],
+        "Requirements Gathering": [],
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Excel": [
+          "onet",
+          "jobs"
+        ],
+        "Data Visualization": [
+          "jobs"
+        ],
+        "Agile": [
+          "onet",
+          "jobs"
+        ],
+        "Power BI": [
+          "jobs"
+        ],
+        "Jira": [
+          "onet",
+          "jobs"
+        ],
+        "Data Analysis": [
+          "jobs"
+        ],
+        "Project Management": [
+          "jobs"
+        ],
+        "Statistics": [
+          "onet",
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 11,
+        "externally_corroborated": 10
+      }
+    },
+    {
+      "role_id": "product_analyst",
+      "canonical_name": "Product Analyst",
+      "onet_soc": "15-2051.01",
+      "aliases": [
+        "product data analyst",
+        "growth analyst",
+        "product analytics analyst"
+      ],
+      "description": "Uses data to understand how a product is used and how to improve it.",
+      "core_skills": [
+        {
+          "skill": "SQL",
+          "required_level": "advanced",
+          "importance": 5
+        },
+        {
+          "skill": "Product Analytics",
+          "required_level": "intermediate",
+          "importance": 5
+        },
+        {
+          "skill": "Statistics",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "A/B Testing",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Data Visualization",
+          "required_level": "intermediate",
+          "importance": 4
+        },
+        {
+          "skill": "Excel",
+          "required_level": "intermediate",
+          "importance": 3
+        }
+      ],
+      "secondary_skills": [
+        {
+          "skill": "Python",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Pandas",
+          "required_level": "beginner",
+          "importance": 3
+        },
+        {
+          "skill": "Tableau",
+          "required_level": "beginner",
+          "importance": 2
+        },
+        {
+          "skill": "Data Analysis",
+          "required_level": "intermediate",
+          "importance": 3
+        },
+        {
+          "skill": "Business Analysis",
+          "required_level": "beginner",
+          "importance": 2
+        }
+      ],
+      "soft_skills": [
+        "Communication",
+        "Problem Solving"
+      ],
+      "typical_projects": [
+        {
+          "title": "Funnel analysis",
+          "skills": [
+            "SQL",
+            "Data Visualization",
+            "Product Analytics"
+          ],
+          "difficulty": "beginner",
+          "description": "A conversion funnel with drop-off findings."
+        },
+        {
+          "title": "A/B test analysis",
+          "skills": [
+            "A/B Testing",
+            "Statistics",
+            "SQL"
+          ],
+          "difficulty": "intermediate",
+          "description": "A complete analysis with a clear recommendation."
+        },
+        {
+          "title": "Retention and cohort dashboard",
+          "skills": [
+            "Product Analytics",
+            "SQL",
+            "Tableau",
+            "Statistics"
+          ],
+          "difficulty": "advanced",
+          "description": "Cohort retention with segment insights."
+        }
+      ],
+      "interview_topics": [
+        "Product metrics and funnels",
+        "A/B testing and significance",
+        "SQL window functions",
+        "Cohort and retention analysis",
+        "Metric design case studies",
+        "Communicating findings"
+      ],
+      "related_roles": [
+        "Data Analyst",
+        "Business Analyst",
+        "Data Scientist"
+      ],
+      "track_order": [
+        "LANGUAGE",
+        "DATA",
+        "BUSINESS",
+        "TOOL"
+      ],
+      "onet_title": "Business Intelligence Analysts",
+      "esco_occupation": "data analyst",
+      "tools": [],
+      "technologies": [
+        "SQL",
+        "Statistics",
+        "A/B Testing",
+        "Data Visualization",
+        "Excel",
+        "Python",
+        "Pandas",
+        "Tableau",
+        "Data Analysis"
+      ],
+      "knowledge_areas": [
+        "Product Analytics",
+        "Business Analysis"
+      ],
+      "prerequisites": [
+        "Programming Fundamentals",
+        "NumPy"
+      ],
+      "recommended_learning_order": [
+        "Business Analysis",
+        "Data Visualization",
+        "Excel",
+        "Programming Fundamentals",
+        "SQL",
+        "Statistics",
+        "Tableau",
+        "A/B Testing",
+        "Data Analysis",
+        "Product Analytics",
+        "Python",
+        "NumPy",
+        "Pandas"
+      ],
+      "experience_level": [
+        "STUDENT",
+        "FRESH_GRADUATE",
+        "ENTRY_LEVEL",
+        "MID_LEVEL",
+        "CAREER_SWITCHER"
+      ],
+      "evidence": {
+        "SQL": [
+          "onet",
+          "jobs"
+        ],
+        "Product Analytics": [],
+        "Statistics": [
+          "onet",
+          "esco",
+          "jobs"
+        ],
+        "A/B Testing": [],
+        "Data Visualization": [
+          "jobs"
+        ],
+        "Excel": [
+          "onet",
+          "jobs"
+        ],
+        "Python": [
+          "onet",
+          "jobs"
+        ],
+        "Pandas": [],
+        "Tableau": [
+          "onet",
+          "jobs"
+        ],
+        "Data Analysis": [
+          "jobs"
+        ],
+        "Business Analysis": [
+          "jobs"
+        ]
+      },
+      "corroboration": {
+        "requirements": 11,
+        "externally_corroborated": 8
+      }
+    }
+  ],
+  "corroboration_report": {
+    "roles": 20,
+    "requirements": 275,
+    "corroborated_by_any_source": 222,
+    "corroborated_share": 0.807,
+    "technology_requirements": 212,
+    "technology_corroborated_share": 0.811,
+    "by_source": {
+      "onet": 160,
+      "esco": 25,
+      "jobs": 189
+    },
+    "note": "Corroboration means an external source also attaches the skill to the role. It supports the mapping; it does not validate required levels, prerequisites, hours, projects or interview topics."
+  }
+}

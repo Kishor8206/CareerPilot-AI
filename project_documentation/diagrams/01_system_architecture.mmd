@@ -1,0 +1,42 @@
+flowchart TD
+  subgraph L0["PRESENTATION"]
+    b0_0["React 18 + TypeScript (Vite) Tailwind, TanStack Query, Zustand"]
+    b0_1["Monaco editor (DSA workspace)"]
+    b0_2["Web Speech API (voice interview)"]
+    b0_3["Socket.IO client (notifications, WebRTC signalling)"]
+  end
+  subgraph L1["API GATEWAY Node.js + Express"]
+    b1_0["Helmet, CORS allow-list, rate limiting"]
+    b1_1["JWT auth + RBAC middleware"]
+    b1_2["Zod validation + input sanitisation"]
+    b1_3["19 route groups under /api/v1"]
+  end
+  subgraph L2["BUSINESS LOGIC (Node services)"]
+    b2_0["resume, job, assessment, interview, mentorship"]
+    b2_1["readiness (APIE client), analytics, reports (PDFKit)"]
+    b2_2["coding service + deterministic judge"]
+    b2_3["career plan service, audit, notifications"]
+  end
+  subgraph L3["AI SERVICE Python FastAPI"]
+    b3_0["11 agents + orchestrator"]
+    b3_1["NLP parser, ATS engine, APIE, Random Forest"]
+    b3_2["RAG: chunking, embeddings, vector store"]
+    b3_3["Career planner, skill-gap, resource catalogue"]
+  end
+  subgraph L4["DATA / RESOURCES"]
+    b4_0["MongoDB 7 (33 Mongoose models)"]
+    b4_1["File storage (local or S3)"]
+    b4_2["Vector store (NumPy / FAISS / Chroma)"]
+    b4_3["Docker judge image (one container per run)"]
+  end
+  subgraph L5["EXTERNAL (optional)"]
+    b5_0["LLM provider: OpenAI-compatible, Azure, Ollama (default: mock)"]
+    b5_1["YouTube Data API v3"]
+    b5_2["vLLM serving LoRA adapters (not deployed)"]
+    b5_3["STUN / TURN for WebRTC"]
+  end
+  L0 --> L1
+  L1 --> L2
+  L2 --> L3
+  L3 --> L4
+  L4 --> L5
